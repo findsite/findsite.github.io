@@ -1,14 +1,51 @@
 html {
      background-color:#d5e5fd;
-}
 #findsite {
-	 width:100%;
-	 height:97.9vh;
-	 opacity: 0;
 	 animation-name:fs;
 	 animation-duration:1.8s;
 	 animation-delay:0.5s;
 	 animation-fill-mode:forwards;
+}	 
+}
+@media only screen and (min-width: 480px) {
+     #findsite {
+               width:100%;
+	           height:20vh;
+	           opacity: 0;
+     	       animation-name:fs;
+	           animation-duration:1.8s;
+	           animation-delay:0.5s;
+	           animation-fill-mode:forwards;			   	 
+}
+@media only screen and (min-width: 768px) {
+     #findsite {
+               width:100%;
+	           height:38vh;
+	           opacity: 0;
+     	       animation-name:fs;
+	           animation-duration:1.8s;
+	           animation-delay:0.5s;
+	           animation-fill-mode:forwards;
+} 
+@media only screen and (min-width: 992px) {
+     #findsite {
+               width:100%;
+	           height:43vh;
+	           opacity: 0;
+     	       animation-name:fs;
+	           animation-duration:1.8s;
+	           animation-delay:0.5s;
+	           animation-fill-mode:forwards;			   
+}
+@media only screen and (min-width: 1382px) {
+     #findsite {
+               width:100%;
+	           height:100vh;
+	           opacity: 0;
+     	       animation-name:fs;
+	           animation-duration:1.8s;
+	           animation-delay:0.5s;
+	           animation-fill-mode:forwards;			   
 }
 @keyframes fs {
 	 0% { opacity: 0; }
