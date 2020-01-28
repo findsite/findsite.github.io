@@ -1,11 +1,5 @@
 html {
      background-color:#d5e5fd;
-#findsite {
-	 animation-name:fs;
-	 animation-duration:1.8s;
-	 animation-delay:0.5s;
-	 animation-fill-mode:forwards;
-}	 
 }
 @media only screen and (min-width: 480px) {
      #findsite {
@@ -22,7 +16,7 @@ html {
                width:100%;
 	           height:38vh;
 	           opacity: 0;
-     	       animation-name:fs;
+     	           animation-name:fs;
 	           animation-duration:1.8s;
 	           animation-delay:0.5s;
 	           animation-fill-mode:forwards;
@@ -32,7 +26,7 @@ html {
                width:100%;
 	           height:43vh;
 	           opacity: 0;
-     	       animation-name:fs;
+     	           animation-name:fs;
 	           animation-duration:1.8s;
 	           animation-delay:0.5s;
 	           animation-fill-mode:forwards;			   
@@ -42,7 +36,7 @@ html {
                width:100%;
 	           height:100vh;
 	           opacity: 0;
-     	       animation-name:fs;
+     	           animation-name:fs;
 	           animation-duration:1.8s;
 	           animation-delay:0.5s;
 	           animation-fill-mode:forwards;			   
