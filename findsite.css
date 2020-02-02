@@ -12,7 +12,6 @@ html {
 	 }
 	 .bghheader {
 		 position:absolute;
-		 border-radius:10px;
 	 }
 	 .hheader {
 		 font-size:270%;
@@ -81,6 +80,6 @@ html {
 		 animation-fill-mode:forwards;
 	 }
 	 @keyframes bgsite {
-		 from { box-shadow:0 0 15px #aaa; background-color:#d0e6fe; }
-		 to { box-shadow: 0 0 20px #888; background-color:#b3cfed;}
+		 from { box-shadow:0 0 15px #aaa; background-color:#d0e6fe; border-radius:0; }
+		 to { box-shadow: 0 0 20px #888; background-color:#b3cfed; border-radius:25px;}
 	 }
