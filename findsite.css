@@ -12,6 +12,7 @@ html {
 	 }
 	 .bghheader {
 		 position:absolute;
+		 border-radius:10px;
 	 }
 	 .hheader {
 		 font-size:270%;
