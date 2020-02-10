@@ -68,6 +68,29 @@ html {
 		 letter-spacing:1px;
 		 word-spacing:8px;
 	 }
+	 .insta {
+		 color:#111;
+	 }
+	 .insta:hover {
+		 animation-name:instanim;
+		 animation-duration:0.5s;
+		 animation-delay:0s;
+		 animation-fill-mode:forwards;
+	 }
+     .hrf {
+     	 width:100%;
+		 box-shadow:0 0 0px #000;
+		 border-color:#aaa;
+		 background-color:#aaa;
+		 opacity:0.5;
+	 }
+	 .osnovateli {
+		 text-align:center;
+		 color:#333;
+		 font-size:130%;
+		 font-variant:small-caps;
+		 letter-spacing:2px;
+	 }
 	 a {
 		 text-decoration:none;
 	 }
@@ -83,5 +106,9 @@ html {
 	 }
 	 @keyframes bgsite {
 		 from { box-shadow:0 0 15px #aaa; background-color:#d0e6fe; border-radius:0; }
-		 to { box-shadow: 0 0 20px #888; background-color:#b3cfed; border-radius:25px;}
+		 to { box-shadow: 0 0 20px #888; background-color:#b3cfed; border-radius:25px; }
+	 }
+	 @keyframes instanim {
+	     from { text-shadow:0 0 0px #aaa; }
+	     to { text-shadow:0 0 2px #aaa; }
 	 }
