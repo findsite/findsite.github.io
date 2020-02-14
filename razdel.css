@@ -1,0 +1,55 @@
+html {
+    background-color:#d0e6fe;
+}
+.upback {
+	position:fixed;
+	background-color:#fff;
+	width:100%;
+	height:5%;
+	margin:-0.5% -0.4%;
+	box-shadow:0 0 10px #aaa;
+}
+.img {
+	width:25%;
+	height:auto;
+	margin:15% 0;
+	border-radius:30px;
+}
+.inv {
+	opacity:0;
+}
+.houseimg {
+	margin:0 0;
+	width:auto;
+	height:100%;
+	border-radius:20px;
+}
+.houseimg:hover {
+	animation-name:img;
+	animation-duration:1s;
+	animation-fill-mode:forwards;
+}
+.findsiteimg {
+	margin:0 0;
+	width:auto;
+	height:100%;
+}
+.upback:hover {
+    animation-name:upback;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;	
+}
+.img:hover {
+	animation-name:img;
+	animation-duration:1s;
+	animation-fill-mode:forwards;
+}
+
+@keyframes upback {
+	from { box-shadow:0 0 10px #aaa; cursor:default; }
+	to { box-shadow:0 0 15px #888; cursor:pointer; }
+}
+@keyframes img {
+	from { box-shadow:0 0 0px #888; }
+	to { box-shadow:0 0 25px #888; }
+}
