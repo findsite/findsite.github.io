@@ -38,9 +38,10 @@ html {
 		 border-radius:35px;
 		 margin:25% 0;
 	 }
-         .central {
-                 width:100%; 
-         }
+      .central {
+         width:100%;
+         margin:15% 0;		 
+     }
 	 .hr1 {
 		 width:50%;
 		 box-shadow:0 0 1px #003;
@@ -68,6 +69,15 @@ html {
 		 letter-spacing:1px;
 		 word-spacing:8px;
 	 }
+	 .hfdescription {
+		 color:#1280de;
+		 text-shadow:0 0 3px #ccc;
+		 font-size:300%;
+		 font-family:Calibri;
+		 font-weight:bold;
+		 letter-spacing:10px;
+		 word-spacing:10px;
+	 }
 	 .insta {
 		 color:#111;
 	 }
@@ -91,6 +101,26 @@ html {
 		 font-variant:small-caps;
 		 letter-spacing:2px;
 	 }
+	 .razdel {
+		 margin:-18% 0;
+	 }
+	 .imgrazdel {
+		 width:22%;
+		 height:auto;
+	  }
+	 .imgrazdel:hover {
+		 animation-name:imgrazdel;
+		 animation-duration:0.5s;
+		 animation-delay:0.1s;
+		 animation-fill-mode:forwards;
+		 animation-timing-function: ease-in-out;
+	 }
+	 .inv {
+		 opacity:0;
+	 }
+	 .exbo {
+		 color:#333;
+	 }	 
 	 a {
 		 text-decoration:none;
 	 }
@@ -98,11 +128,37 @@ html {
 		 width:50%;
 		 height: auto;
 	 }
+	 h2, h3, p:hover {
+		 cursor:default;
+	 }
+	 hr:hover {
+		 cursor:default;
+	 }
+	 .description:hover {
+		 cursor:pointer;
+	 }
+	 .hdescription:hover {
+		 cursor:pointer;
+	 }
+	 .bgheader:hover {
+		 animation-name:bgheader;
+		 animation-duration:0.6s;
+		 animation-delay:0.15s;
+		 animation-fill-mode:forwards;
+	 }
 	 .bgsite:hover {
 		 animation-name:bgsite;
 		 animation-duration:0.5s;
 		 animation-delay:0.1s;
 		 animation-fill-mode:forwards;
+	 }
+	 @keyframes imgrazdel {
+		 from { transform:rotate(0deg); }
+		 to { transform:rotate(720deg); }
+	 }
+	 @keyframes bgheader {
+		 from { box-shadow:0 0 30px #888; }
+		 to { box-shadow:0 0 40px #666; }
 	 }
 	 @keyframes bgsite {
 		 from { box-shadow:0 0 15px #aaa; background-color:#d0e6fe; border-radius:0; }
