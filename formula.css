@@ -98,7 +98,7 @@ button {
 	background-size:100% auto;
 	width:900px;
 	height:1500px;
-	border-radius:0px 0px 25px 25px;
+	border-radius:35px;
 	box-shadow:0 0 25px #777;
     margin:5% -0.5%;
 }
