@@ -1,9 +1,13 @@
 html {
-    background-color:#fff;
+    background-color:#79e08f;
 }
 .hup {
+	color:#eee;
 	padding:10px;
 }
+.hup:hover {
+	cursor:default;
+} 
 .hr {
 	width:90%;
 	height:1px;
@@ -23,11 +27,17 @@ html {
 	 font-size:180%;
 	 font-weight:bolder;
  }
+ button:hover {
+	 animation-name:btnim;
+	 animation-duration:0.8s;
+	 animation-fill-mode:forwards;
+ }
 @media only screen and (min-height:240px) {
 .face {
-	background-color:#ddd;
-	width:850px;
-	height:1050px;
+	background:url("https://cdn.discordapp.com/attachments/521767712792379414/680139939848912912/88be811b37335046.jpg");
+    background-size:100% auto;
+	width:864px;
+	height:923px;
 	border-radius:25px;
 	box-shadow:0 0 25px #777;
 	margin:0 0;
@@ -36,17 +46,18 @@ html {
 	font-size:32px;
 	font-family:Calibri;
 	font-weight:bold;
-	text-shadow:0 0 1px #000;
+	text-shadow:0 0 5px #aaa;
     }
 }
 @media only screen and (min-height:968px) {
 .face {
-	background-color:#ddd;
-	width:1000px;
+	background:url("https://cdn.discordapp.com/attachments/521767712792379414/680139939848912912/88be811b37335046.jpg");
+	background-size:100% auto;
+	width:900px;
 	height:1500px;
 	border-radius:0px 0px 25px 25px;
 	box-shadow:0 0 25px #777;
-    margin:-0.5% -0.5%;
+    margin:5% -0.5%;
 }
 .hup {
 	font-size:50px;
@@ -54,4 +65,8 @@ html {
 	font-weight:bold;
 	text-shadow:0 0 1px #000;
     }	
+}
+@keyframes btnim {
+    from { box-shadow:0 0 8px #555; }
+    to { box-shadow:0 0 13px #333; }   
 }
