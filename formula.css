@@ -1,7 +1,5 @@
-html {
-    background-color:#79e08f;
-}
 .hup {
+	margin:10% 0;
 	color:#eee;
 	padding:10px;
 }
@@ -15,26 +13,70 @@ html {
 	border-color:#000;
 	border:0;
  }
- button {
+html, body {
+     background-color: #79e08f;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+}
+button {
 	 margin:25% 0;
-	 width:320px;
-	 height:160px;
-	 background-color:#eee;
-	 border-radius:0 25px 0 25px;
-	 box-shadow:0 0 8px #555;
-	 border:0;
-	 color:#238;
-	 font-size:180%;
-	 font-weight:bolder;
- }
- button:hover {
-	 animation-name:btnim;
-	 animation-duration:0.8s;
-	 animation-fill-mode:forwards;
- }
+     width:160px;
+	 height:10%;
+     transform: scale(1.8);
+	 padding: 12px 40px;
+	 border: 0;
+	 font: 16px/24px Verdana, sans-serif;
+	 text-decoration: none;
+	 box-shadow:0 0 5px #aaa;
+	 background:
+	     linear-gradient(90deg, 
+		     #23d4b1,
+			 #17d661,
+			 #46eabb,
+			 #1ad6a0);
+	 background-size: 400%;
+	 display: inline-block;
+	 color: #fff;
+	 border-radius: 8px;
+	 position: relative;
+	 cursor: pointer;
+	 animation: glowing 8s linear infinite;
+	 text-transform: uppercase;
+	 text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+	 letter-spacing: 2px;
+     &:after {
+         content: " ";
+	     position: absolute;
+	     border-radius: inherit;
+	     left: -6px;
+	     right: -6px;
+	     botton: -6px;
+         top: -6px;
+     	 background: inherit;
+	     background-size: inherit;
+    	 z-index: -1;
+    	 opacity: 0;
+    	 transition: opacity 0.5s ease;
+    	 filter: blur(16px);
+    	 animation: glowing 7s linear infinite;
+    	 transform: translateZ(0);
+     }
+&:hover {
+     &:after {
+         opacity: 1;
+         }
+     }
+}
+@keyframes glowing {
+     100% {
+	     background-position: -400%;
+	 }
+}
 @media only screen and (min-height:240px) {
 .face {
-	background:url("https://cdn.discordapp.com/attachments/521767712792379414/680139939848912912/88be811b37335046.jpg");
+	position: relative;
+	background:url("https://cdn.discordapp.com/attachments/521767712792379414/680424640073564232/e4a79c970bf3f626.jpg");
     background-size:100% auto;
 	width:864px;
 	height:923px;
@@ -51,7 +93,8 @@ html {
 }
 @media only screen and (min-height:968px) {
 .face {
-	background:url("https://cdn.discordapp.com/attachments/521767712792379414/680139939848912912/88be811b37335046.jpg");
+	position: relative;
+	background:url("https://cdn.discordapp.com/attachments/521767712792379414/680424640073564232/e4a79c970bf3f626.jpg");
 	background-size:100% auto;
 	width:900px;
 	height:1500px;
