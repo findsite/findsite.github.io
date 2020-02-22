@@ -84,7 +84,7 @@ button:hover {
     background-size:100% auto;
 	width:864px;
 	height:1100px;
-	border-radius:25px;
+	border-radius:35px;
 	box-shadow:0 0 25px #777;
 	margin:0 0;
 }
@@ -102,7 +102,7 @@ button:hover {
 	background-size:100% 100%;
 	width:900px;
 	height:1500px;
-	border-radius:35px;
+	border-radius:15px;
 	box-shadow:0 0 25px #777;
     margin:5% -0.5%;
 }
