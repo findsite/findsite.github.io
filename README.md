@@ -1,2 +1,2 @@
 # findsite.github.io
-find yourself's site!
+find site for yourself!
