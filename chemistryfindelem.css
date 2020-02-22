@@ -72,6 +72,11 @@ button {
 	     background-position: -400%;
 	 }
 }
+button:hover {
+    animation-name:btnim;
+    animation-duration:0.8s;
+    animation-fill-mode:forwards;
+}
 @media only screen and (min-height:240px) {
 .face {
 	position: relative;
