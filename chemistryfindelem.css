@@ -72,11 +72,6 @@ button {
 	     background-position: -400%;
 	 }
 }
-button:hover {
-    animation-name:btnim;
-    animation-duration: 0.8s;
-    animation-fill-mode:forwards;
-}
 @media only screen and (min-height:240px) {
 .face {
 	position: relative;
@@ -112,8 +107,4 @@ button:hover {
 	font-weight:bold;
 	text-shadow:0 0 1px #000;
     }	
-}
-@keyframes btnim {
-    from { box-shadow:0 0 8px #555; }
-    to { box-shadow:0 0 13px #444; }   
 }
