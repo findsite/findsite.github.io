@@ -122,9 +122,8 @@ img:hover {
 @media only screen and (min-height:968px) {
     .razdelu {
 	position: relative;
-	top:370px;
-	left:-10%:
-	right:10%:
+	top:310px;
+	left:-10%;
     }
     ul {
 	list-style-type: none;
@@ -148,7 +147,7 @@ img:hover {
         letter-spacing: 10px;
 	}
 	.fimg {
-		margin-top:5%;
+		top:0;
 		right:0;
 		left:-1em;
 		bottom:0;
