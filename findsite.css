@@ -2,7 +2,7 @@ html {
 	height:100%;
 	background-color:#d0e6fe;;
 }
-p, h:hover {
+p, h1, h2, h3, h4, h5, h6:hover {
         cursor:default;
 }
 .header {
