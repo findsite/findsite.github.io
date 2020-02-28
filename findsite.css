@@ -73,7 +73,7 @@ img:hover {
 }
 @keyframes imgrazdel {
 		 from { filter: blur(0); }
-		 to { filter: blur(100px); }
+		 to { filter: blur(5px); }
 	 }
 
 /* пк */
