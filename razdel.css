@@ -56,8 +56,8 @@ html {
 	to { box-shadow:0 0 15px #888; }
 }
 @keyframes img {
-	from { box-shadow:0 0 0px #888; }
-	to { box-shadow:0 0 25px #888; }
+	from { box-shadow:0 0 0px #888; transform: scale(1); }
+	to { box-shadow:0 0 25px #888; transform: scale(1.03); }
 }
 
 /* пк */
