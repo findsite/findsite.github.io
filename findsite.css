@@ -4,6 +4,9 @@ html {
 }
 p, h1, h2, h3, h4, h5, h6:hover {
         cursor:default;
+html {
+	height:100%;
+	background-color:#d0e6fe;;
 }
 .header {
 	position: absolute;
@@ -63,17 +66,9 @@ img {
 	width:70%;
 	height: auto;
 }
-img:hover {
-	animation-name:imgrazdel;
-	animation-duration:0.5s;
-	animation-delay:0.1s;
-	animation-fill-mode:forwards;
-	animation-iteration-count:1;
-	animation-timing-function: ease-in-out;
-}
 @keyframes imgrazdel {
 		 from { filter: blur(0); }
-		 to { filter: blur(5px); }
+		 to { filter: blur(5px);  }
 	 }
 
 /* пк */
@@ -91,6 +86,29 @@ img:hover {
 		display: inline-block;
 		top:100px;
 		right:15px;
+	}
+	.descr {
+		position: absolute;
+		top:0;
+		left:15%;
+		width:70%;
+		height:35.9vh;
+		opacity:0;
+		font-size:340%;
+		font-weight: bold;
+		font-variant: small-caps;
+		font-family: sans-serif;
+		color:#eee;
+		text-shadow:0 0 30px #000;
+	}
+    li:hover .descr {
+		animation-name: descr;
+		animation-duration:0.5s;
+		animation-fill-mode: forwards;
+	}
+	@keyframes descr {
+	    from { opacity:0; top:0; }
+		to { opacity:1; top:30%; }
 	}
 	.horazdelu {
 		color: #1280de;
@@ -122,7 +140,9 @@ img:hover {
 @media only screen and (min-height:968px) {
     .razdelu {
 	position: relative;
-	top:310px;
+	top:300px;
+	left:-10%:
+	right:10%:
     }
     ul {
 	list-style-type: none;
@@ -137,6 +157,47 @@ img:hover {
 	    width:30%;
 		height:auto;
     }
+	.descr {
+		position: absolute;
+		top:0;
+		left:15%;
+		width:70%;
+		height:35.9vh;
+		opacity:0;
+		font-size:250%;
+		font-weight: bold;
+		font-variant: small-caps;
+		font-family: sans-serif;
+		color:#fff;
+		text-shadow:0 0 30px #000;
+	}
+	li:hover .descr {
+		animation-name: descr;
+		animation-duration:0.5s;
+		animation-fill-mode: forwards;
+	}
+	.fimg .descr {
+		animation-name: descr;
+		animation-duration:0.5s;
+		animation-delay:0.5s;
+		animation-fill-mode: forwards;
+	}
+	.simg .descr {
+		animation-name: descr;
+		animation-duration:0.5s;
+		animation-delay:0.8s;
+		animation-fill-mode: forwards;
+	}
+	.timg .descr {
+		animation-name: descr;
+		animation-duration:0.5s;
+		animation-delay:1.2s;
+		animation-fill-mode: forwards;
+	}
+	@keyframes descr {
+	    from { opacity:0; top:0; }
+		to { opacity:1; top:30%; }
+	}
 	.horazdelu {
 		color: #1280de;
         text-shadow: 0 0 3px #ccc;
@@ -146,7 +207,6 @@ img:hover {
         letter-spacing: 10px;
 	}
 	.fimg {
-		top:0;
 		right:0;
 		left:-1em;
 		bottom:0;
@@ -168,7 +228,7 @@ img:hover {
 @media only screen and (max-width:1596px) and (max-height:1280px) {
     .razdelu {
 	position: relative;
-	top: 300px;
+	top: 319px;
 	right:10%:
     }
 	.razdelu li {
@@ -185,6 +245,37 @@ img:hover {
 	img {
 		width:70%;
 		height: auto;
+	}
+	.descr {
+		position: absolute;
+		top:0;
+		left:15%;
+		width:70%;
+		height:31.9vh;
+		border-radius:100vh;
+	}
+	.descr {
+		position: absolute;
+		top:0;
+		left:15%;
+		width:70%;
+		height:35.9vh;
+		opacity:0;
+		font-size:240%;
+		font-weight: bold;
+		font-variant: small-caps;
+		font-family: sans-serif;
+		color:#eee;
+		text-shadow:0 0 30px #000;
+	}
+	li:hover .descr {
+		animation-name: descr;
+		animation-duration:0.5s;
+		animation-fill-mode: forwards;
+	}
+	@keyframes descr {
+	    from { opacity:0; top:0; }
+		to { opacity:1; top:30%; }
 	}
 	.horazdelu {
 		color: #1280de;
