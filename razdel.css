@@ -42,12 +42,12 @@ html {
 }
 .img:hover {
 	animation-name:img;
-	animation-duration:1s;
+	animation-duration:0.3s;
 	animation-fill-mode:forwards;
 }
 .imgtwo:hover {
 	animation-name:img;
-	animation-duration:1s;
+	animation-duration:0.3s;
 	animation-fill-mode:forwards;
 }
 
