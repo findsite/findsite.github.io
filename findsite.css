@@ -2,6 +2,9 @@ html {
 	height:125%;
 	background-color:#d0e6fe;;
 }
+p, h1, h2, h3, h4, h5, h6:hover {
+        cursor:default;
+}
 .header {
 	position: absolute;
 	background-color:#fff;
