@@ -2,8 +2,8 @@ html {
 	height:125%;
 	background-color:#d0e6fe;;
 }
-p, h1, h2, h3, h4, h5, h6:hover {
-        cursor:default;
+p, h1, h2, h3, h4, h5, h6 {
+	cursor:default;
 }
 .header {
 	position: absolute;
@@ -71,8 +71,8 @@ img {
 /* пк */
 
     .razdelu {
-	position: relative;
-	top:300px;
+	    position: relative;
+	    top:300px;
     }
     ul {
 	    list-style-type: none;
@@ -137,11 +137,11 @@ img {
 
 /* мт */
 
-@media only screen and (max-width:960px) {
+@media only screen and (max-width:1080px) {
     .razdelu {
 	position: relative;
 	top:300px;
-	left:-10%:
+	left:-1011%:
 	right:10%:
     }
     ul {
@@ -171,12 +171,7 @@ img {
 		color:#fff;
 		text-shadow:0 0 30px #000;
 	}
-	li:hover .descr {
-		animation-name: descr;
-		animation-duration:0.5s;
-		animation-fill-mode: forwards;
-	}
-	.fimg .descr {
+    .fimg .descr {
 		animation-name: descr;
 		animation-duration:0.5s;
 		animation-delay:0.5s;
@@ -193,10 +188,6 @@ img {
 		animation-duration:0.5s;
 		animation-delay:1.2s;
 		animation-fill-mode: forwards;
-	}
-	@keyframes descr {
-	    from { opacity:0; top:0; }
-		to { opacity:1; top:30%; }
 	}
 	.horazdelu {
 		color: #1280de;
