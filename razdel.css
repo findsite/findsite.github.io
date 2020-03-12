@@ -6,29 +6,32 @@ html {
 	height:auto;
 	margin:15% 0;
 	border-radius:30px;
+	animation: img-reverse .3s;
 }
 .imgtwo {
 	width:25%;
-	height:auto;
+	height: auto;
     margin:5% 0;
     border-radius:30px;	
+	animation: img-reverse .3s;
 }
 .inv {
 	opacity:0;
 }
 .inv:hover {
-	cursor:default;
+	cursor: default;
 }
 .houseimg {
 	margin:0 0;
-	width:auto;
+	width: auto;
 	height:100%;
 	border-radius:20px;
+	animation: img-reverse .3s;
 }
 .houseimg:hover {
-	animation-name:img;
+	animation-name: img;
 	animation-duration:1s;
-	animation-fill-mode:forwards;
+	animation-fill-mode: forwards;
 }
 .findsiteimg {
 	margin:0 0;
@@ -36,28 +39,36 @@ html {
 	height:100%;
 }
 .upback:hover {
-    animation-name:upback;
-    animation-duration:0.5s;
-    animation-fill-mode:forwards;	
+    animation-name: upback;
+    animation-duration:0.25s;
+    animation-fill-mode: forwards;	
 }
 .img:hover {
-	animation-name:img;
+	animation-name: img;
 	animation-duration:0.3s;
 	animation-fill-mode:forwards;
 }
 .imgtwo:hover {
-	animation-name:img;
+	animation: img;
 	animation-duration:0.3s;
-	animation-fill-mode:forwards;
+	animation-fill-mode: forwards;
 }
 
 @keyframes upback {
 	from { box-shadow:0 0 10px #aaa; }
 	to { box-shadow:0 0 15px #888; }
 }
+@keyframes upback-reverse {
+	from { box-shadow:0 0 15px #888; }
+	to { box-shadow:0 0 10px #aaa; }
+}
 @keyframes img {
-	from { box-shadow:0 0 0px #888; transform: scale(1); }
-	to { box-shadow:0 0 25px #888; transform: scale(1.03); }
+	from { box-shadow:0 0 0 #888; transform: scale(1); }
+	to { box-shadow:0 0 25px #888;  transform: scale(1.03); }
+}
+@keyframes img-reverse {
+    from { box-shadow:0 0 25px #888; transform: scale(1.03); }
+	to { box-shadow:0 0 0 $888; transform: scale(1); }
 }
 
 /* пк */
@@ -71,10 +82,12 @@ html {
 		top:0;
 		left:0;
 	    box-shadow:0 0 10px #aaa;
+		animation: upback-reverse .3s;
 }
 	.spisok {
 		top:0;
 	}
+	.img
 }
 
 /* мт */
@@ -85,7 +98,7 @@ html {
 	    background-color:#fff;
 	    width:100%;
 	    height:5%;
-		top:0;
+		top:0.1%;
 		left:0;
 	    box-shadow:0 0 10px #aaa;
 }
