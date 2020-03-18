@@ -58,7 +58,7 @@ p, h1, h2, h3, h4, h5, h6 {
 	border-color:#00a;
 }
 img {
-	width:70%;
+	width:66%;
 	height: auto;
 }
 @keyframes imgrazdel {
@@ -74,6 +74,9 @@ img {
     }
     ul {
 		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
 	    list-style-type: none;
     }
 	.razdelu li {
@@ -132,13 +135,13 @@ img {
 
 @media only screen and (max-width:1080px) {
     .razdelu {
-	position: relative;
-	top:300px;
+	    position: relative;
+	    top:300px;
     }
     ul {
         display: flex;
 		flex-direction: column;
-	list-style-type: none;
+	    list-style-type: none;
     }	
 	.razdelu li {
 		position: relative;
@@ -205,9 +208,9 @@ img {
 
 @media only screen and (max-width:1596px) and (max-height:1180px) {
     .razdelu {
-	position: relative;
-	top: 319px;
-	right:10%:
+	    position: relative;
+	    top: 319px;
+	    right:10%:
     }
 	.razdelu li {
 		position: relative;
