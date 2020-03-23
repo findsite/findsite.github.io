@@ -1,0 +1,139 @@
+html {
+    background-color:#222;
+}
+* {
+	padding:0;
+	margin:0;
+}
+ul {
+	list-style-type: none
+}
+.img {
+	width:25%;
+	height:auto;
+	margin:15% 0;
+	border-radius:30px;
+	animation: img-reverse .3s;
+}
+.imgtwo {
+	width:25%;
+	height: auto;
+    margin:5% 0;
+    border-radius:30px;	
+	animation: img-reverse .3s;
+}
+.inv {
+	opacity:0;
+}
+.inv:hover {
+	cursor: default;
+}
+.houseimg {
+	margin:0 0;
+	width: auto;
+	height:100%;
+	border-radius:20px;
+	animation: img-reverse .3s;
+}
+.houseimg:hover {
+	animation-name: img;
+	animation-duration:1s;
+	animation-fill-mode: forwards;
+}
+.findsiteimg {
+	margin:0 0;
+	width:auto;
+	height:100%;
+}
+.upback:hover {
+    animation-name: upback;
+    animation-duration:0.3s;
+    animation-fill-mode: forwards;	
+}
+.img:hover {
+	animation-name: img;
+	animation-duration:0.3s;
+	animation-fill-mode:forwards;
+}
+.imgtwo:hover {
+	animation: img;
+	animation-duration:0.3s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes upback {
+	from { box-shadow:0 0 10px #222; }
+	to { box-shadow:0 0 15px #444; }
+}
+@keyframes upback-reverse {
+	from { box-shadow:0 0 15px #444; }
+	to { box-shadow:0 0 10px #222; }
+}
+@keyframes img {
+	from {transform: scale(1); }
+	to { transform: scale(1.03); }
+}
+@keyframes img-reverse {
+    from { transform: scale(1.03); }
+	to { transform: scale(1); }
+}
+
+/* пк */
+
+	.upback {
+	    position:fixed;
+	    background-color:#333;
+	    width:100%;
+	    height:5%;
+		top:0;
+		left:0;
+	    box-shadow:0 0 10px #222;
+		animation: upback-reverse .3s;
+}
+	.spisok {
+		top:0;
+	}
+	a .img {
+		display: inline-block;
+	}
+	a .imgtwo {
+		display: inline-block;
+	}
+
+/* мт */
+
+@media only screen and (max-width:1020px) {
+	.upback {
+	    position:fixed;
+	    background-color:#fff;
+	    width:100%;
+	    height:5%;
+		top:0.1%;
+		left:0;
+	    box-shadow:0 0 10px #222;
+    }
+	ul { 
+		margin-top:150px;
+	}
+	.inv {
+		opacity:0;
+	}
+}
+
+/* нб */
+
+@media only screen and (max-width:1596px) and (max-height:1280px) {
+	.upback {
+	    position:fixed;
+	    background-color:#fff;
+	    width:100%;
+	    height:8%;
+        top:0.1%;
+		left:0;
+	    box-shadow:0 0 10px #222;
+    }
+	.spisok { 
+		margin-top:100px;
+	}
+	
+}
