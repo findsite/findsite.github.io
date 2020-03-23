@@ -175,13 +175,15 @@ a {
 	flex:1;
 	padding:0;
 	margin:0;
-	width:100%;
+	width:auto;
+	height:60px;
 }
 .dark {
 	flex:1;
 	padding:0;
 	margin:0;
-	width:100%;
+	width:auto;
+	height:60px;
 }   
    .razdelu {
 	    position: relative;
