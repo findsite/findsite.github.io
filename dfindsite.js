@@ -1,10 +1,31 @@
+function dark(){
+let dq = document.getElementById("html" );
+let dw = document.getElementById("header" );
+let de = document.getElementById("hhr" );
+let dr = document.getElementById("htheader" );
+let dt = document.getElementById("pheader" );
+let dy = document.getElementById("rhr" );
+let dz = document.getElementById("horazdelu");
+let dao = document.getElementById("staso");
+let dat = document.getElementById("stast");
+    dat.href = "dhimia.html";
+    dao.href = "dguitar.html";
+	dq.style = "animation: adhtml .3s forwards";
+	dw.style = "animation: adheader .3s forwards";
+	de.style = "animation: adhhr .3s forwards";
+	dr.style = "animation: adhtheader .3s forwards";
+    dt.style = "animation: adpheader .3s forwards";
+	dy.style = "animation: adrhr .3s forwards";	
+	dz.style = "animation: adhorazdel .3s forwards";
+}
+dark();
 function error() {
       alert("Данный сайт находится в разработке");
 }
 function errorr() {
 	  alert("Данный раздел находится в разработке");
 }
-check = 0;
+let check = 1;
 function darkover(){
 let dq = document.getElementById("html" );
 let dw = document.getElementById("header" );
