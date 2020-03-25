@@ -88,12 +88,14 @@ a {
 	padding:0;
 	margin:0;
 	width:50%;
+	cursor: pointer;
 }
 .dark {
 	flex:1;
 	padding:0;
 	margin:0;
 	width:50%;
+	cursor: pointer;
 }
     .razdelu {
 	    position: relative;
