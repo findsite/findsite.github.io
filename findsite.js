@@ -21,7 +21,7 @@ let dat = document.getElementById("stast");
 	dw.style = "animation: adheader .3s forwards";
 	de.style = "animation: adhhr .3s forwards";
 	dr.style = "animation: adhtheader .3s forwards";
-        dt.style = "animation: adpheader .3s forwards";
+    dt.style = "animation: adpheader .3s forwards";
 	dy.style = "animation: adrhr .3s forwards";	
 	dz.style = "animation: adhorazdel .3s forwards";
 }
@@ -42,7 +42,7 @@ let dat = document.getElementById("stast");
 	dw.style = "animation: adheaderrev .3s forwards";
 	de.style = "animation: adhhrrev .3s forwards";
 	dr.style = "animation: adhtheaderrev .3s forwards";
-        dt.style = "animation: adpheaderrev .3s forwards";
+    dt.style = "animation: adpheaderrev .3s forwards";
 	dy.style = "animation: adrhrrev .3s forwards";	
 	dz.style = "animation: adhorazdelrev .3s forwards";
 }
@@ -63,7 +63,7 @@ let dat = document.getElementById("stast");
 	dw.style = "animation: adheaderrev .3s forwards";
 	de.style = "animation: adhhrrev .3s forwards";
 	dr.style = "animation: adhtheaderrev .3s forwards";
-        dt.style = "animation: adpheaderrev .3s forwards";
+    dt.style = "animation: adpheaderrev .3s forwards";
 	dy.style = "animation: adrhrrev .3s forwards";	
 	dz.style = "animation: adhorazdelrev .3s forwards";	
 }
@@ -84,7 +84,7 @@ let dat = document.getElementById("stast");
 	dw.style = "animation: adheader .3s forwards";
 	de.style = "animation: adhhr .3s forwards";
 	dr.style = "animation: adhtheader .3s forwards";
-        dt.style = "animation: adpheader .3s forwards";
+    dt.style = "animation: adpheader .3s forwards";
 	dy.style = "animation: adrhr .3s forwards";	
 	dz.style = "animation: adhorazdel .3s forwards";	
 }
