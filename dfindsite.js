@@ -1,4 +1,4 @@
-function dark(){
+window.onload = function dark(){
 let dq = document.getElementById("html" );
 let dw = document.getElementById("header" );
 let de = document.getElementById("hhr" );
@@ -25,7 +25,7 @@ function error() {
 function errorr() {
 	  alert("Данный раздел находится в разработке");
 }
-let check = 1;
+check = 1;
 function darkover(){
 let dq = document.getElementById("html" );
 let dw = document.getElementById("header" );
