@@ -1,4 +1,4 @@
-window.onload = function dark(){
+window.onload = function() {
 let dq = document.getElementById("html" );
 let dw = document.getElementById("header" );
 let de = document.getElementById("hhr" );
@@ -18,7 +18,6 @@ let dat = document.getElementById("stast");
 	dy.style = "animation: adrhr .3s forwards";	
 	dz.style = "animation: adhorazdel .3s forwards";
 }
-dark();
 function error() {
       alert("Данный сайт находится в разработке");
 }
