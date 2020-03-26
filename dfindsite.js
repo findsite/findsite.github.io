@@ -10,13 +10,13 @@ let dao = document.getElementById("staso");
 let dat = document.getElementById("stast");
     dat.href = "dhimia.html";
     dao.href = "dguitar.html";
-	dq.style = "animation: adhtml .3s forwards";
-	dw.style = "animation: adheader .3s forwards";
-	de.style = "animation: adhhr .3s forwards";
-	dr.style = "animation: adhtheader .3s forwards";
-    dt.style = "animation: adpheader .3s forwards";
-	dy.style = "animation: adrhr .3s forwards";	
-	dz.style = "animation: adhorazdel .3s forwards";
+	dq.style = "animation: adhtml 0s forwards";
+	dw.style = "animation: adheader 0s forwards";
+	de.style = "animation: adhhr 0s forwards";
+	dr.style = "animation: adhtheader 0s forwards";
+    dt.style = "animation: adpheader 0s forwards";
+	dy.style = "animation: adrhr 0s forwards";	
+	dz.style = "animation: adhorazdel 0s forwards";
 }
 function error() {
       alert("Данный сайт находится в разработке");
