@@ -1,5 +1,4 @@
 window.onload = function() {
-setStandartProperty();
 let dq = document.getElementById("html" );
 let dw = document.getElementById("header" );
 let de = document.getElementById("hhr" );
@@ -19,14 +18,10 @@ let dat = document.getElementById("stast");
 	dy.style = "animation: adrhr 0s forwards";	
 	dz.style = "animation: adhorazdel 0s forwards";
 };
-
-function setStandartProperty(){
-	let hhr = document.getElementById("hhr");
+let hhr = document.getElementById("hhr");
 	hhr.style.width = "85%";
-	let htheader = document.getElementById("htheader");
+let htheader = document.getElementById("htheader");
 	htheader.style.opacity = "1";
-}
-
 function error(){
       alert("Данный сайт находится в разработке");
 }
