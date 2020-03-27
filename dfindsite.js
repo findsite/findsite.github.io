@@ -1,8 +1,5 @@
 window.onload = function() {
-let hhr = document.getElementById("hhr");
-	hhr.style = "animation: animhhr 1s forwards .15s";
-let htheader = document.getElementById("htheader");
-	htheader.style = "animation: animhtheader .8s forwards 1115ms";
+setStandartProperty();
 let dq = document.getElementById("html" );
 let dw = document.getElementById("header" );
 let de = document.getElementById("hhr" );
