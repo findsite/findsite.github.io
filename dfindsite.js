@@ -144,4 +144,4 @@ function descrzero(x){
 		let descrth = document.getElementById("descrthree");
 		descrth.style = "animation: descrrevers .5s forwards";
 	}
-
+}
