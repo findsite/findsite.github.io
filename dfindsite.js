@@ -21,7 +21,7 @@ let dat = document.getElementById("stast");
     dt.style = "animation: adpheader 0s forwards";
 	dy.style = "animation: adrhr 0s forwards";	
 	dz.style = "animation: adhorazdel 0s forwards";
-}
+};
 
 function setStandartProperty(){
 	let hhr = document.getElementById("hhr");
