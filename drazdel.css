@@ -89,6 +89,7 @@ ul {
 		left:0;
 	    box-shadow:0 0 10px #222;
 		animation: upback-reverse .3s;
+		z-index:1;
 }
 	.spisok {
 		top:0;
@@ -111,6 +112,7 @@ ul {
 		top:0.1%;
 		left:0;
 	    box-shadow:0 0 10px #222;
+		z-index:1;
     }
 	ul { 
 		margin-top:150px;
@@ -131,6 +133,7 @@ ul {
         top:0.1%;
 		left:0;
 	    box-shadow:0 0 10px #222;
+		z-index:1;
     }
 	.spisok { 
 		margin-top:100px;
