@@ -1,5 +1,4 @@
 window.onload = function() {
-	setStandartProperty();
 let dq = document.getElementById("html" );
 let dw = document.getElementById("header" );
 let de = document.getElementById("hhr" );
@@ -18,6 +17,7 @@ let dat = document.getElementById("stast");
     dt.style = "animation: adpheader 0s forwards";
 	dy.style = "animation: adrhr 0s forwards";	
 	dz.style = "animation: adhorazdel 0s forwards";
+	setStandartProperty();
 };
 
 function setStandartProperty(){
