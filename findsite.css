@@ -99,6 +99,7 @@ a {
 	cursor: pointer;
 }
     .razdelu {
+	    flex:1;
 	    position: relative;
 	    top:300px;
     }
@@ -183,6 +184,7 @@ a {
 	height:60px;
 }   
    .razdelu {
+	    flex:1;
 	    position: relative;
 	    top:300px;
     }
@@ -267,9 +269,9 @@ a {
 
 @media only screen and (max-width:1596px) and (max-height:1180px) {
     .razdelu {
+	    flex:1;
 	    position: relative;
 	    top: 319px;
-	    right:10%:
     }
 	.razdelu li {
 		position: relative;
