@@ -8,8 +8,8 @@ let dy = document.getElementById("rhr" );
 let dz = document.getElementById("horazdelu");
 let dao = document.getElementById("staso");
 let dat = document.getElementById("stast");
-    dat.href = "dhimia.html";
-    dao.href = "dguitar.html";
+    dat.href = "dguitar.html";
+    dao.href = "dhimia.html";
 	dq.style = "animation: adhtml 0s forwards";
 	dw.style = "animation: adheader 0s forwards";
 	de.style = "animation: adhhr 0s forwards";
@@ -34,7 +34,7 @@ function errorr(){
 	  alert("Данный раздел находится в разработке");
 }
 
-let check = 0;
+let check = 1;
 function darkover(){
 let dq = document.getElementById("html" );
 let dw = document.getElementById("header" );
@@ -45,8 +45,8 @@ let dy = document.getElementById("rhr" );
 let dz = document.getElementById("horazdelu");
 let dao = document.getElementById("staso");
 let dat = document.getElementById("stast");
-    dat.href = "dguitar.html";
-    dao.href = "dhimia.html";
+    dat.href = "dhimia.html";
+    dao.href = "dguitar.html";
 	dq.style = "animation: adhtml .3s forwards";
 	dw.style = "animation: adheader .3s forwards";
 	de.style = "animation: adhhr .3s forwards";
@@ -68,8 +68,8 @@ let dy = document.getElementById("rhr" );
 let dz = document.getElementById("horazdelu");
 let dao = document.getElementById("staso");
 let dat = document.getElementById("stast");
-    dat.href = "guitara.html";
-    dao.href = "himia.html";
+    dat.href = "himia.html";
+    dao.href = "guitara.html";
 	dq.style = "animation: adhtmlrev .3s forwards";
 	dw.style = "animation: adheaderrev .3s forwards";
 	de.style = "animation: adhhrrev .3s forwards";
