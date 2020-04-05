@@ -18,7 +18,6 @@ function error(){
 function errorr(){
 	  alert("Данный раздел находится в разработке");
 }
-
 let check = 0;
 function darkover(){
 let dq = document.getElementById("html" );
@@ -139,6 +138,7 @@ function descrzero(x){
 		descrth.style = "animation: descrrevers .5s forwards";
 	}
 }	
+/* Паша попросил */
 function minecraftsukaetomoyazhinbmagyarlazaksimbiozgovna() {
 	alert("46.33.38.106:25566");
 }
