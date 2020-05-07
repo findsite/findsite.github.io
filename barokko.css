@@ -2,8 +2,8 @@
 	width:0;
 }
 html {
-	background-image:url("https://cdn.discordapp.com/attachments/521767712792379414/699338850870231071/2204823_800x600_nativity-cathedral-kozelets-chernihiv-region-ukraine-2-small.jpg");
-	background-size:100% 105%;
+	background-image:url("https://cdn.discordapp.com/attachments/521767712792379414/707690851840557168/download.jpg");
+	background-size:100% 100%;
 	background-attachment:fixed;
 	height:100%;
 }
@@ -36,7 +36,7 @@ img {
 }
 @media only screen and (max-width:1080px){
 	html {
-		background-image:url("https://cdn.discordapp.com/attachments/521767712792379414/699338850870231071/2204823_800x600_nativity-cathedral-kozelets-chernihiv-region-ukraine-2-small.jpg");
+		background-image:url("https://cdn.discordapp.com/attachments/521767712792379414/707690851840557168/download.jpg");
 		background-size:110% 100%;
 		background-attachment:fixed;
 		height:100%;
