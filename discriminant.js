@@ -1,5 +1,6 @@
-function setCoef() {
 let lines = new Array("fr-line", "sc-line", "tr-line", "fu-line", "fv-line", "sx-line", "sv-line", "eg-line", "nn-line", "tn-line", "el-line", "tw-line", "tn-line", "fn-line", "fn-line", "sn-line", "en-line");   
+
+function setCoef() {
    let a, b, c, sqr_b, a_mult_c, discriminant, inv_b, dbl_b;
    let radical_of_discriminant, inv_a_mult_c, dbl_a_mult_c, s_a_mult_c;
         a = prompt("Введите первый коэффициент");
@@ -193,7 +194,7 @@ let lines = new Array("fr-line", "sc-line", "tr-line", "fu-line", "fv-line", "sx
                     
                     /* vieta theorem */
                     
-                    if(a == 1) {                     
+                    if(a == 1 && radical_of_discriminant > 0) {                     
                         document.getElementById(lines[14]).innerHTML = "<br/><br/>Через теорему Виета:<br/><br/>X1 + X2 = "+inv_b;
                         document.getElementById(lines[15]).innerHTML = "<br/>X1 * X2 = "+c;
                         document.getElementById(lines[16]).innerHTML = "X1 = "+x_one+"<br/>X2 = "+x_two;
@@ -202,4 +203,9 @@ let lines = new Array("fr-line", "sc-line", "tr-line", "fu-line", "fv-line", "sx
             else {
                     document.getElementById(lines[3]).innerHTML = "Корней нет";
             }
+}
+function resetCoef() {
+	for(let j = 0; j < 16; j++) {
+		document.getElementById(lines[j]).innerHTML = ' ';
+	}
 }
