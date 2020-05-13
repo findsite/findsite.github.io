@@ -1,4 +1,4 @@
-let lines = new Array("fr-line", "sc-line", "tr-line", "fu-line", "fv-line", "sx-line", "sv-line", "eg-line", "nn-line", "tn-line", "el-line", "tw-line", "tn-line", "fn-line", "fn-line", "sn-line", "en-line");   
+let lines = new Array("fr-line", "sc-line", "tr-line", "fu-line", "fv-line", "sx-line", "sv-line", "eg-line", "nn-line", "tn-line", "el-line", "tw-line", "tn-line", "fn-line", "sn-line", "en-line");   
 
 function setCoef() {
    let a, b, c, sqr_b, a_mult_c, discriminant, inv_b, dbl_b;
@@ -208,7 +208,7 @@ function setCoef() {
             }
 }
 function resetCoef() {
-	for(let j = 0; j < 16; j++) {
+	for(let j = 0; j < 18; j++) {
 		document.getElementById(lines[j]).innerHTML = ' ';
 	}
 }
