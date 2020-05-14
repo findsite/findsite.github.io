@@ -200,7 +200,7 @@ function setCoef() {
                         document.getElementById(lines[16]).innerHTML = "X1 = "+x_one+"<br/>X2 = "+x_two;
                     }
 		    else {
-			document.getElementById(lines[14]).innerHTML = "<br/><br/>Невозможно решить через теорему Виета, так-как коэффициент 'a' не равен 1.";    
+			document.getElementById(lines[14]).innerHTML = "<br/><br/>Невозможно решить через теорему Виета.";    
 		    }
             }
             else {
