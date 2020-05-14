@@ -23,7 +23,7 @@ function setCoef() {
     
         /* Find the radical of discriminant  */
     
-        for(let i = 0; i < 10000; i = i + 1) {
+        for(let i = 0; i < 50000; i = i + 1) {
             let sqr = i * i;
                 if (sqr == discriminant) {
                     radical_of_discriminant = i;
