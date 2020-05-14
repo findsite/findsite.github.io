@@ -208,7 +208,9 @@ function setCoef() {
             }
 }
 function resetCoef() {
-	for(let j = 0; j < 17; j++) {
+	let j = 0;
+	do {
 		document.getElementById(lines[j]).innerHTML = ' ';
-	}
+		j = j + 1;
+	} while(j < 16);
 }
