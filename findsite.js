@@ -138,7 +138,3 @@ function descrzero(x){
 		descrth.style = "animation: descrrevers .5s forwards";
 	}
 }	
-/* Паша попросил */
-function minecraftsukaetomoyazhinbmagyarlazaksimbiozgovna() {
-	alert("46.33.38.106:25566");
-}
