@@ -212,5 +212,5 @@ function resetCoef() {
 	do {
 		document.getElementById(lines[j]).innerHTML = ' ';
 		j = j + 1;
-	} while(j < 16);
+	} while(j < 17);
 }
