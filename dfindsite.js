@@ -27,13 +27,6 @@ function setStandartProperty(){
 	htheader.style.opacity = "1";
 }
 
-function error(){
-      alert("Данный сайт находится в разработке");
-}
-function errorr(){
-	  alert("Данный раздел находится в разработке");
-}
-
 let check = 1;
 function darkover(){
 let dq = document.getElementById("html" );
@@ -45,8 +38,10 @@ let dy = document.getElementById("rhr" );
 let dz = document.getElementById("horazdelu");
 let dao = document.getElementById("staso");
 let dat = document.getElementById("stast");
+let dath = document.getElementById("stasth");
     dat.href = "dhimia.html";
-    dao.href = "dguitar.html";
+    dao.href = "dguitara.html";
+	dath.href = "dmath.html";
 	dq.style = "animation: adhtml .3s forwards";
 	dw.style = "animation: adheader .3s forwards";
 	de.style = "animation: adhhr .3s forwards";
@@ -68,8 +63,10 @@ let dy = document.getElementById("rhr" );
 let dz = document.getElementById("horazdelu");
 let dao = document.getElementById("staso");
 let dat = document.getElementById("stast");
+let dath = document.getElementById("stasth");
     dat.href = "himia.html";
     dao.href = "guitara.html";
+	dath.href = "math.html";
 	dq.style = "animation: adhtmlrev .3s forwards";
 	dw.style = "animation: adheaderrev .3s forwards";
 	de.style = "animation: adhhrrev .3s forwards";
@@ -91,8 +88,10 @@ let dy = document.getElementById("rhr" );
 let dz = document.getElementById("horazdelu");
 let dao = document.getElementById("staso");
 let dat = document.getElementById("stast");
+let dath = document.getElementById("stasth");
     dat.href = "himia.html";
     dao.href = "guitara.html";
+	dath.href = "math.html";
 	dq.style = "animation: adhtmlrev .3s forwards";
 	dw.style = "animation: adheaderrev .3s forwards";
 	de.style = "animation: adhhrrev .3s forwards";
@@ -114,8 +113,10 @@ let dy = document.getElementById("rhr" );
 let dz = document.getElementById("horazdelu");
 let dao = document.getElementById("staso");
 let dat = document.getElementById("stast");
-    dat.href = "dguitar.html";
-    dao.href = "dhimia.html";
+let dath = document.getElementById("stasth");
+    dat.href = "dhimia.html";
+    dao.href = "dguitara.html";
+	dath.href = "dmath.html";
 	dq.style = "animation: adhtml .3s forwards";
 	dw.style = "animation: adheader .3s forwards";
 	de.style = "animation: adhhr .3s forwards";
