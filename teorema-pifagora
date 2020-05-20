@@ -1,0 +1,39 @@
+<!doctype html>
+	<html>
+		<head>
+			<meta charset="UTF-8" name="viewport">
+			<LINK REL="stylesheet" HREF="default-math.css">
+            <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/521767712792379414/677502253942308874/2.png" type="image/x-icon">
+			<script src="teorema-pifagora.js"></script>
+		</head>
+		<body>
+			<div align="center">
+			  <div class="top">
+				<button onclick="resetCoef(); setCoef()" class="btn">Ввести коэффициенты</button>
+			  </div>
+					<br/><br/><br/>
+					<div class="field-coef" align="center">
+						<div class="field-text">
+							<span id="fr-line"></span>
+							<span id="sc-line"></span>
+							<span id="fu-line"></span>
+							<span id="tr-line"></span>
+							<span id="fv-line"></span>
+							<span id="sx-line"></span>
+							<span id="sv-line"></span>
+							<span id="eg-line"></span>
+							<span id="nn-line"></span>
+							<span id="tn-line"></span>
+							<span id="el-line"></span>
+							<span id="tw-line"></span>
+							<span id="tn-line"></span>
+							<span id="fn-line"></span>
+							<span id="sn-line"></span>
+							<span id="sn-line"></span>
+							<span id="en-line"></span>
+							<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+						</div>
+				</div>
+			</div>
+		</body>
+	</html>
