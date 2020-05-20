@@ -3,7 +3,7 @@ window.onload = function(){
 	hhr.style = "animation: animhhr 1s forwards .15s";
 	let htheader = document.getElementById("htheader");
 	htheader.style = "animation: animhtheader .8s forwards 1115ms";
-}
+};
 
 function setStandartProperty(){
 	let hhr = document.getElementById("hhr");
@@ -12,12 +12,6 @@ function setStandartProperty(){
 	htheader.style.opacity = "1";
 }
 
-function error(){
-      alert("Данный сайт находится в разработке");
-}
-function errorr(){
-	  alert("Данный раздел находится в разработке");
-}
 let check = 0;
 function darkover(){
 let dq = document.getElementById("html" );
@@ -29,8 +23,10 @@ let dy = document.getElementById("rhr" );
 let dz = document.getElementById("horazdelu");
 let dao = document.getElementById("staso");
 let dat = document.getElementById("stast");
+let dath = document.getElementById("stasth");
     dat.href = "dhimia.html";
-    dao.href = "dguitar.html";
+    dao.href = "dguitara.html";
+	dath.href = "dmath.html";
 	dq.style = "animation: adhtml .3s forwards";
 	dw.style = "animation: adheader .3s forwards";
 	de.style = "animation: adhhr .3s forwards";
@@ -52,8 +48,10 @@ let dy = document.getElementById("rhr" );
 let dz = document.getElementById("horazdelu");
 let dao = document.getElementById("staso");
 let dat = document.getElementById("stast");
+let dath = document.getElementById("stasth");
     dat.href = "himia.html";
     dao.href = "guitara.html";
+	dath.href = "math.html";
 	dq.style = "animation: adhtmlrev .3s forwards";
 	dw.style = "animation: adheaderrev .3s forwards";
 	de.style = "animation: adhhrrev .3s forwards";
@@ -75,8 +73,10 @@ let dy = document.getElementById("rhr" );
 let dz = document.getElementById("horazdelu");
 let dao = document.getElementById("staso");
 let dat = document.getElementById("stast");
+let dath = document.getElementById("stasth");
     dat.href = "himia.html";
     dao.href = "guitara.html";
+	dath.href = "math.html";
 	dq.style = "animation: adhtmlrev .3s forwards";
 	dw.style = "animation: adheaderrev .3s forwards";
 	de.style = "animation: adhhrrev .3s forwards";
@@ -98,8 +98,10 @@ let dy = document.getElementById("rhr" );
 let dz = document.getElementById("horazdelu");
 let dao = document.getElementById("staso");
 let dat = document.getElementById("stast");
+let dath = document.getElementById("stasth");
     dat.href = "dhimia.html";
-    dao.href = "dguitar.html";
+    dao.href = "dguitara.html";
+	dath.href = "dmath.html";
 	dq.style = "animation: adhtml .3s forwards";
 	dw.style = "animation: adheader .3s forwards";
 	de.style = "animation: adhhr .3s forwards";
@@ -138,3 +140,7 @@ function descrzero(x){
 		descrth.style = "animation: descrrevers .5s forwards";
 	}
 }	
+/* Паша попросил */
+function minecraftsukaetomoyazhinbmagyarlazaksimbiozgovna() {
+	alert("46.33.38.106:25566");
+}
