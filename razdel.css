@@ -65,6 +65,7 @@ li img {
 	box-shadow:0 0 15px #aaa;
 }
 .inv {
+	cursor: default;
 	opacity:0;
 }
 
