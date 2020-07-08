@@ -172,7 +172,7 @@ function setCoef() {
 							}
                         }
                     }
-                    if(radical_of_discriminant == 0 && discriminant > 0) {
+                    if(radical_of_discriminant == 0 && discriminant >= 0) {
                         if(a > 1 || a < 1) {
                             if(a != -1 && a != 1) {
 										document.getElementById(lines[8]).innerHTML = l_f;
