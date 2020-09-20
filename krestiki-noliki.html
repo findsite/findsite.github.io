@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8" name="viewport">
+		<link rel="stylesheet" href="krestiki-noliki.css">
+		<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+		<script src="krestiki-noliki.js"></script>
+		<title>Крестики-нолики</title>
+	</head>
+	<body>
+		<div id="container">
+			<table>
+				<tr>
+					<td><p id="FIRs"></p><button onclick="setPos(0)"></button></td>
+					<td><p id="SECs"></p><button onclick="setPos(1)"></button></td>
+					<td><p id="THRs"></p><button onclick="setPos(2)"></button></td>
+				</tr>
+				<tr>
+					<td><p id="FOUs"></p><button onclick="setPos(3)"></button></td>
+					<td><p id="FIVs"></p><button onclick="setPos(4)"></button></td>
+					<td><p id="SIXs"></p><button onclick="setPos(5)"></button></td>
+				</tr>
+				<tr>
+					<td><p id="SEVs"></p><button onclick="setPos(6)"></button></td>
+					<td><p id="EIGs"></p><button onclick="setPos(7)"></button></td>
+					<td><p id="NINs"></p><button onclick="setPos(8)"></button></td>
+				</tr>
+			</table>
+			<div onclick="resetPos()">
+				<p id="turn"></p>
+				<p id="subturn"></p>
+			</div>	
+		</div>
+	</body>
+</html>
