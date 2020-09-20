@@ -41,3 +41,8 @@ button {
 #subturn {
 	font-size: 3vh;
 }
+media only screen and (max-height: 720px) {
+	table {
+		margin-top: 5vh;	
+	}
+}
