@@ -24,7 +24,9 @@ html {
 	box-shadow: 0 0 20px #111;
 }
 img {
-	height: 25vh;
+	height: auto;
+	max-height: 25vh;
+	min-width: 25vh;
 
 	margin-top: 30vh;
 	margin-left: 5%;
