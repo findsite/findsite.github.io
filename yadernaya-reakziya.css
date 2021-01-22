@@ -123,4 +123,7 @@ button {
 	button {
 		font-size: 2vh;
 	}
+	#td-elem-to-decay {
+		font-size: 3vh;	
+	}
 }
