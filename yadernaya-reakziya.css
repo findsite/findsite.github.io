@@ -104,3 +104,23 @@ button {
 	opacity: 0;
 	width: 0;
 }
+
+
+
+@media only screen and (max-width: 1080px) {
+	.header {
+		font-size: 5vh;
+	}
+	table {
+		width: 100%;
+	}
+	input {
+		font-size: 3vh;
+		letter-spacing: 1px;
+	}
+}
+@media only screen and (max-width: 360px) {
+	button {
+		font-size: 2vh;
+	}
+}
