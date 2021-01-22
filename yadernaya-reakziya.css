@@ -107,7 +107,7 @@ button {
 
 
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1440px) {
 	.header {
 		font-size: 5vh;
 	}
