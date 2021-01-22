@@ -128,6 +128,7 @@ function checkValue() {
 				break;
 			}
 			document.getElementById("elem-to-decay").innerHTML = "Элемент не найден";
+			document.getElementById("p-decay").innerHTML = "";
 		}
 	}
 	else {
