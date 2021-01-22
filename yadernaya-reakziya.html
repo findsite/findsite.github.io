@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="yadernaya-reakziya.css">
+		<script src="yadernaya-reakziya.js" defer></script>
+		<title>Ядерные реакции</title>
+	</head>
+	<body>
+		<div id="container" align="center">
+			<div id="decay">
+				<p class="header">Распад элемента</p><br/>
+				<input id="element" placeholder="Хим. элемент"/>
+					<table>
+						<tr class="tetd">
+							<td id="td-elem-to-decay">
+								<div style="display: inline"><p id="elem-to-decay"></p></div>
+								<div style="display: inline"><p id="p-decay"></p></div>				
+							</td>
+						</tr>
+					</table>
+					<div id="buttons">
+						<button onclick="allow('a')">Альфа-распад</button>
+						<button onclick="allow('b')">Бета-распад</button>
+					</div>
+			</div>
+		</div>
+	</body>
+</html>
