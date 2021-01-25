@@ -1,0 +1,48 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+html {
+	background-color: #323235;
+}
+table {
+	background-color: #ddd;
+
+	height: 50vh;
+
+	margin-top: 1%;
+
+	border-radius: 15px;
+	border-spacing: 0 0;
+}
+#days-week {
+	background-color: #39f;
+
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+}
+tr {
+ 	border-radius: 15px;
+}
+td {
+	width: 30vh;
+	font-size: 2vh;
+
+	border: solid;
+ 	border-color: #39f;
+
+	height: 5vh;
+}
+input {
+	width: 98%;
+	height: 100%;
+
+	background-color: #ddd;
+	border: none;
+
+	color: #111;
+	font-size: 115%;
+
+	padding-left: 2%;
+}
