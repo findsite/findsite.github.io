@@ -1,11 +1,15 @@
 * {
 	padding: 0;
 	margin: 0;
+
+	font-family: Calibri;
 }
 html {
 	background-color: #323235;
 }
 table {
+	display: normal;
+
 	background-color: #ddd;
 
 	height: 50vh;
@@ -15,7 +19,7 @@ table {
 	border-radius: 15px;
 	border-spacing: 0 0;
 }
-#days-week {
+.days-week {
 	background-color: #39f;
 
 	color: #fff;
@@ -35,7 +39,7 @@ td {
 	height: 5vh;
 }
 input {
-	width: 98%;
+	width: 85%;
 	height: 100%;
 
 	background-color: #ddd;
@@ -45,4 +49,42 @@ input {
 	font-size: 115%;
 
 	padding-left: 2%;
+}
+.info {
+	cursor: pointer;
+
+	position: absolute;
+
+	display: inline;
+
+	margin-top: 1.5vh;
+
+	background-color: #fff;
+
+	width: 3vh;
+	height: 3vh;
+
+	border-radius: 100%;
+
+	color: #323235;
+	font-size: 125%;
+	font-weight: bold;
+	text-align: center;
+}
+
+@media only screen and (max-width: 1400px) {
+	table {
+		width: 100vh;
+		height: 50vh;
+	}
+	td {
+		width: 20%;
+	}
+	input {
+		font-size: 115%;
+	}
+	.info {
+		margin-top: 2%;
+		margin-left: -1.5%;
+	}
 }
