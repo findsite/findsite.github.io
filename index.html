@@ -1,40 +1,43 @@
 <!DOCTYPE html>
- <html id="html">
-  <head>
-   <meta charset="UTF-8" name="viewport">
-   <link rel="stylesheet" href="findsite.css">
-   <link rel="stylesheet" href="anim.css">
-   <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/521767712792379414/677502253942308874/2.png" type="image/x-icon">
-   <script src="findsite.js"></script>
-   <script src="default.js"></script>
-   <title>FindSite</title>
-  </head>
-  <body>
-   <div class="container">
-    <div id="header" align="center">
-	  <br/>
-	  <div class="psm">
-	   <h2 id="htheader" onclick="minecraftsukaetomoyazhinbmagyarlazaksimbiozgovna()">FindSite</h2>
-	   <pre class="perekl">
-	   <img src="https://cdn.discordapp.com/attachments/521767712792379414/691606321400643644/205f22f08f3f8f72.png" class="light" onmouseover="lightover()" onmouseout="lightout()" onclick="check = 0"/>   
-        <p class="inv">--</p>	   
-	   <img src="https://cdn.discordapp.com/attachments/521767712792379414/691648991544344647/9d274401edcfbf21.png" class="dark" onmouseover="darkover()" onmouseout="darkout()" onclick="check = 1">
-	   </pre>
-	  </div>
-	  <br/>
-      <hr id="hhr"/>
-	  <br/>
-	 <p id="pheader"> Крупный и развивающийся проект, который предоставляет вам спектр сайтов на различную тематику.</p>
-	</div>
-	<div class="razdelu" align="center">
-	  <h1 id="horazdelu">Разделы</h1>
-	  <hr id="rhr"/>
-	 <ul class="ulrazdelu">
-	   <li class="fimg"  onmouseover="descrone(1)" onmouseout="descrzero(1)"><a href="guitar.html" id="staso"><span class="descr" id="descrone">Музыка    </span><span class="razdel"><img src="https://cdn.discordapp.com/attachments/521767712792379414/677893060172185600/460f3ecdb4c3dcba.png" id="imgrazdel"/><br/><br/><br/><br/><br/></span></a></li>
-	   <li class="simg"  onmouseover="descrone(2)" onmouseout="descrzero(2)"><a href="himia.html" id="stast"><span class= "descr" id="descrtwo">Химия      </span><span class="razdel"><img src="https://cdn.discordapp.com/attachments/521767712792379414/677894455222730774/2.png" id="imgrazdel"/><br/><br/><br/><br/><br/></span></a></li>
-	   <li class="timg"  onmouseover="descrone(3)" onmouseout="descrzero(3)"><a href="math.html" id="stasth"><span class="descr" id="descrthree">Математика</span><span class="razdel"><img src="https://cdn.discordapp.com/attachments/521767712792379414/710404544177242163/2.png" id="imgrazdel"/><br/><br/><br/><br/><br/></span></a></li>
-	  </ul>
-     </div>
-    </div>
-  </body>
- </html>
+<html id="html">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>FindSite</title>
+
+		<link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/521767712792379414/677502253942308874/2.png" type="image/x-icon">
+		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="dark-animation.css">
+		<script src="index.js" defer></script>
+	</head>
+	<body>
+		<div id="container" align="center">
+			<div id="header">
+				<p id="h-header">FindSite</p>
+
+				<img src="https://cdn.discordapp.com/attachments/521767712792379414/691606321400643644/205f22f08f3f8f72.png" id="light-theme" onclick="changeTheme(0)">
+				<img src="https://cdn.discordapp.com/attachments/521767712792379414/691648991544344647/9d274401edcfbf21.png" id="dark-theme" onclick="changeTheme(1)">
+
+				<hr id="hr-header"/>
+				<p id="d-header">Крупный и развивающийся проект, который предоставляет Вам спектр сайтов на различную тематику</p>
+			</div>
+
+			<div id="groups">
+				<p id="g-header">Разделы</p>
+				<hr id="hr-group"/>
+				<ul id="list-of-groups">
+					<li>
+						<a href="" class="section" id="link-phizika" onmouseover="text_in('phizika')" onmouseout="text_out('phizika')"><span class="name-of-section" id="group-phizika">Физика</span><img src="https://cdn.discordapp.com/attachments/802882425922912307/802902109984260116/c37b9de424ce4ccd.png"></a>
+					</li>
+					<li>
+						<a href="" class="section" id="link-himia" onmouseover="text_in('himia')" onmouseout="text_out('himia')"><span class="name-of-section" id="group-himia">Математика</span><img src="https://cdn.discordapp.com/attachments/521767712792379414/710404544177242163/2.png"></a>
+					</li>
+					<li>
+						<a href="" class="section" id="link-math" onmouseover="text_in('math')" onmouseout="text_out('math')"><span class="name-of-section" id="group-math">Химия</span><img src="https://cdn.discordapp.com/attachments/521767712792379414/677894455222730774/2.png"></a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</body>
+</html>
