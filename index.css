@@ -1,17 +1,153 @@
+* {
+	cursor: default;
+
+	padding: 0;
+	margin: 0;
+
+	font-family: Calibri;
+	font-weight: bold;
+}
+::-webkit-scrollbar {
+	width: 0;
+}
 html {
-	background-color:#d5e5fd;
+	background-color:#d0e6fe;
 }
-@media (min-width:762px) {
-img {
-	margin:75% 0;
-	max-width:150%;
+#container {
+	height: 100%;
+}
+#header {
+	position: fixed;
+
+	background-color: #fff;
+
+	box-shadow: 0 0 1vh #555;
+
+	width: 100%;
 	height: auto;
+	max-height: 30%;
+
+	color: #4277e0;
+
+	z-index: 1;
 }
+#header img {
+	cursor: pointer;
+
+	position: absolute;
+
+	height: 30%;
+
+	margin-top: 1%;
 }
-@media (min-width:1024px) {
-img {
-	margin:0 0;
-	max-width:100%;
-	height: 97.9vh;
-}	
+#header hr {
+	width: 2%;
+
+	margin-top: 2%;
+
+	border: solid;
+	border-color: #4277e0;
+	border-width: 0.01vh;
+}
+#h-header {
+	display: inline-block;
+
+	padding-top: 1.5%;
+
+	font-size: 4vh;
+
+	opacity: 1;
+}
+#d-header {
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 1%;
+	padding-right: 1%;
+
+	font-size: 2.25vh;
+	letter-spacing: 1.5px;
+}
+#light-theme {
+	margin-left: 35vh;
+}
+#dark-theme {
+	margin-left: 45vh;
+}
+
+
+#groups {
+	padding-top: 32.5vh;
+
+	font-size: 225%;
+	color: #2167f1;
+}
+#hr-group {
+	width: 50%;
+
+	margin-top: 2.5%;
+	margin-bottom: 10%;
+
+	border-color: #4277e0;
+}
+#g-header {
+	font-size: 5vh;
+}
+#list-of-groups {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	list-style-type: none;
+
+	margin-right: 3%;
+	margin-left: 3%;
+}
+#list-of-groups img {
+	width: 37.5vh;
+}
+.section {
+	position: relative;
+}
+.name-of-section {
+	position: absolute;
+
+  	margin-top: 0;
+  	left: 50%;
+
+  	color: #eee;
+	font-size: 5vh;
+	font-weight: bold;
+	font-variant: small-caps;
+	font-family: sans-serif;
+	text-align: center;
+	text-shadow: 0 0 15px #333;
+
+	transform: translate(-50%, -50%);
+	opacity: 0;
+}
+
+@media only screen and (max-width: 1080px) {
+	#groups {
+		padding-top: 22.5vh;
+	}
+	#groups hr {
+		width: 25%;
+
+		margin-top: 2.5%;
+	}
+	#list-of-groups {
+		flex-direction: column;
+	}
+	#list-of-groups img {
+		height: 20vh;
+		width: auto;
+
+	}
+	.name-of-section {
+		margin-top: 50%;
+
+		font-size: 3vh;
+
+		opacity: 1;
+	}
 }
