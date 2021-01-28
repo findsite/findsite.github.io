@@ -1,0 +1,98 @@
+@keyframes hr-header-window-onload {
+	0% { width: 2% }
+	100% { width: 80% }
+}
+@keyframes h-header-window-onload {
+	0% { opacity: 0 }
+	100% { opacity: 1 }
+}
+
+
+
+@keyframes html {
+	0% { background-color: #111 }
+	100% { background-color: #d0e6fe }
+}
+@keyframes html-rev {
+	0% { background-color: #d0e6fe }
+	100% { background-color: #111 }
+}
+
+@keyframes header {
+	0% { background-color: #333 }
+	100% { background-color: #fff  }
+}
+@keyframes header-rev {
+	0% { background-color: #fff  }
+	100% { background-color: #333 }
+}
+
+@keyframes h-header {
+	0% { color: #faa }
+	100% { color: #4277e0 }
+}
+@keyframes h-header-rev {
+	0% { color: #4277e0 }
+	100% { color: #faa }
+}
+
+@keyframes d-header {
+	0% { color: #fff }
+	100% { color: #4277e0 }
+}
+@keyframes d-header-rev {
+	0% { color: #4277e0 }
+	100% { color: #fff }
+}
+
+@keyframes hr-header {
+	0% { border-color: #fff; width: 80%; }
+	50% { width: 40% }
+	100% { border-color: #4277e0; width: 80%; }
+}
+@keyframes hr-header-rev {
+	0% { border-color: #4277e0; width: 80%; }
+	50% { width: 40%; }
+	100% { border-color: #fff; width: 80%; }
+}
+
+@keyframes g-header {
+	0% { color: #faa }
+	100% { color: #4277e0 }
+}
+@keyframes g-header-rev {
+	0% { color: #4277e0 }
+	100% { color: #faa }
+}
+
+@keyframes hr-group {
+	0% { border-color: #fff }
+	100% { border-color: #4277e0 }
+}
+@keyframes hr-group-rev {
+	0% { border-color: #4277e0 }
+	100% { border-color: #fff }
+}
+
+
+
+
+@keyframes sectionIn {
+	0% { margin-top: 1vh; opacity: 0 }
+	100% { margin-top: 50%; opacity: 1 }
+}
+@keyframes sectionOut {
+	0% { margin-top: 50%; opacity: 1 }
+	100% { margin-top: 38.5vh; opacity: 0 }
+}
+
+@media only screen and (max-width: 1400px) {
+	@keyframes sectionIn {
+		0% { margin-top: -1.8vh; opacity: 0 }
+		100% { margin-top: 50%; opacity: 1 }
+	}
+	@keyframes sectionOut {
+	0% { margin-top: 50%; opacity: 1 }
+	100% { margin-top: 50%; opacity: 1 }
+}
+}
