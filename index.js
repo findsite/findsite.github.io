@@ -60,7 +60,7 @@ function setTheme(type) {
 	}
 }
 
-// Animations for the name of the selection 
+// Animations for the name of the section 
 
 function text_in(group) {
 	document.getElementById("group-" + group).style = "animation: sectionIn .4s forwards";
