@@ -128,10 +128,13 @@ html {
 
 @media only screen and (max-width: 1080px) {
 	#light-theme {
-		margin-left: 7.5vh;
+		margin-left: 7.5%;
 	}
 	#dark-theme {
-		margin-left: 15vh;
+		margin-left: 20%;
+	}
+	#d-header {
+		font-size: 2vh;
 	}
 
 	#groups {
