@@ -1,75 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Расписание</title>
-
 	<link rel="stylesheet" href="dz.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 	<script src="dz.js" defer></script>
+	<title>Расписание</title>
 </head>
 <body>
 	<div id="container" align="center">
-		<table id="timetable">
-			<tbody>
-				<tr class="days-week">
-					<td style="border-radius: 15px 0 0 0" class="day-week">Понедельник</td>
-					<td class="day-week">Вторник</td>
-					<td class="day-week">Среда</td>
-					<td class="day-week">Четверг</td>
-					<td style="border-radius: 0 15px 0 0" class="day-week">Пятница</td>
-				</tr>
-				<tr>
-					<td id="1-td"><input type="text" id="1-inp"/></td>
-					<td id="2-td"><input type="text" id="2-inp"/></td>
-					<td id="3-td"><input type="text" id="3-inp"/></td>
-					<td id="4-td"><input type="text" id="4-inp"/></td>
-					<td id="5-td"><input type="text" id="5-inp"/></td>
-				</tr>
-				<tr>
-					<td id="6-td"><input type="text" id="6-inp"/></td>
-					<td id="7-td"><input type="text" id="7-inp"/></td>
-					<td id="8-td"><input type="text" id="8-inp"/></td>
-					<td id="9-td"><input type="text" id="9-inp"/></td>
-					<td id="10-td"><input type="text" id="10-inp"/></td>
-				</tr>
-				<tr>
-					<td id="11-td"><input type="text" id="11-inp"/></td>
-					<td id="12-td"><input type="text" id="12-inp"/></td>
-					<td id="13-td"><input type="text" id="13-inp"/></td>
-					<td id="14-td"><input type="text" id="14-inp"/></td>
-					<td id="15-td"><input type="text" id="15-inp"/></td>
-				</tr>
-				<tr>
-					<td id="16-td"><input type="text" id="16-inp"/></td>
-					<td id="17-td"><input type="text" id="17-inp"/></td>
-					<td id="18-td"><input type="text" id="18-inp"/></td>
-					<td id="19-td"><input type="text" id="19-inp"/></td>
-					<td id="20-td"><input type="text" id="20-inp"/></td>
-				</tr>
-				<tr>
-					<td id="21-td"><input type="text" id="21-inp"/></td>
-					<td id="22-td"><input type="text" id="22-inp"/></td>
-					<td id="23-td"><input type="text" id="23-inp"/></td>
-					<td id="24-td"><input type="text" id="24-inp"/></td>
-					<td id="25-td"><input type="text" id="25-inp"/></td>
-				</tr>
-				<tr>
-					<td id="26-td"><input type="text" id="26-inp"/></td>
-					<td id="27-td"><input type="text" id="27-inp"/></td>
-					<td id="28-td"><input type="text" id="28-inp"/></td>
-					<td id="29-td"><input type="text" id="29-inp"/></td>
-					<td id="30-td"><input type="text" id="30-inp"/></td>
-				</tr>
-				<tr>
-					<td id="31-td" style="border-radius: 0 0 0 15px"><input type="text" id="31-inp" style="border-radius: 0 0 15px 0"/></td>
-					<td id="32-td"><input type="text" id="32-inp"/></td>
-					<td id="33-td"><input type="text" id="33-inp"/></td>
-					<td id="34-td"><input type="text" id="34-inp"/></td>
-					<td id="35-td" style="border-radius: 0 0 15px 0"><input type="text" id="35-inp" style="border-radius: 0 15px 0 0"/></td>
-				</tr>
-			</tbody>
-		</table>
+		<p id="header">Расписание уроков</p>
+		<table id="lessons"></table>
 	</div>
 </body>
 </html>
