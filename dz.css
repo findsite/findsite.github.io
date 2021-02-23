@@ -1,90 +1,121 @@
 * {
-	padding: 0;
 	margin: 0;
-
-	font-family: Calibri;
+	padding: 0;
+}
+::-webkit-scrollbar {
+	width: 0;
 }
 html {
-	background-color: #323235;
+	background-color: #111;
+}
+
+#header {
+	color: #fff;
+	font-size: 5vh;
+	font-weight: bold;
+	font-family: Calibri;
+	font-variant: small-caps;
+
+	padding-top: 5%;
+	padding-bottom: 2.5%;
 }
 table {
-	display: normal;
-
-	background-color: #ddd;
-
-	height: 50vh;
-
-	margin-top: 1%;
-
-	border-radius: 15px;
-	border-spacing: 0 0;
-}
-.days-week {
-	background-color: #39f;
+	width: 80%;
 
 	color: #fff;
-	font-weight: bold;
+	font-size: 3vh;
+	font-family: Calibri;
+}
+.day-week {
+	display: flex;
+	flex-direction: column;
+}
+.day-week .header {
+	background-color: #28e;
+
 	text-align: center;
+	font-weight: bold;
+	letter-spacing: 2px;
+
+	padding-top: 1%;
+	padding-bottom: 1%;
+
+	box-shadow: 0 2px 2px #555;
+
+	z-index: 2;
 }
-tr {
- 	border-radius: 15px;
-}
-td {
-	width: 30vh;
-	font-size: 2vh;
+.day-week td {
+	background-color: #999;
 
 	border: solid;
- 	border-color: #39f;
+	border-width: 1px;
+	border-color: #888;
 
-	height: 5vh;
+	padding: .5%;
+
+	z-index: 1;
 }
-input {
-	width: 85%;
-	height: 100%;
-
-	background-color: #ddd;
+.day-week input {
+	background-color: #999;
 	border: none;
+	border-right: solid;
+	border-color: #888;
 
-	color: #111;
-	font-size: 115%;
+	width: 85%;
+	height: 4vh;
 
 	padding-left: 2%;
+
+	color: #fff;
+	font-size: 2.5vh;
+	text-shadow: 0 0 5px #888;
 }
-.info {
-	cursor: pointer;
+.day-week input::placeholder {
+	color: #ddd;
+	font-weight: bolder;
+	font-variant: small-caps;
+}
 
-	position: absolute;
+.is-done {
+	display: inline-block;
 
-	display: inline;
-
-	margin-top: 1.5vh;
-
-	background-color: #fff;
-
-	width: 3vh;
-	height: 3vh;
+	background-color: #f00;
+	width: 1.5vh;
+	height: 1.5vh;
 
 	border-radius: 100%;
 
-	color: #323235;
-	font-size: 125%;
-	font-weight: bold;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+.lesson-info {
+	display: inline-block;
+
+	width: 3.5vh;
+	height: 3.5vh;
+
+	background-color: #fff;
+
+	color: #111;
 	text-align: center;
+
+	border-radius: 100%;
+
+}
+.lesson-info::before {
+	content: "i";
 }
 
-@media only screen and (max-width: 1400px) {
+
+
+@media only screen and (max-width: 1080px) {
 	table {
-		width: 100vh;
-		height: 50vh;
+		width: 90%;
 	}
-	td {
-		width: 20%;
+	.day-week input {
+		width: 80%;
 	}
-	input {
-		font-size: 115%;
-	}
-	.info {
-		margin-top: 2%;
-		margin-left: -1.5%;
+	.lesson-info {
+		margin-left: 2%;
 	}
 }
