@@ -9,6 +9,9 @@ html {
 	background-color: #111;
 }
 
+p {
+	cursor: default;	
+}
 #header {
 	color: #fff;
 	font-size: 5vh;
@@ -77,6 +80,8 @@ table {
 }
 
 .is-done {
+	cursor: pointer;
+	
 	display: inline-block;
 
 	background-color: #f00;
@@ -89,6 +94,8 @@ table {
 	margin-right: 2%;
 }
 .lesson-info {
+	cursor: pointer;
+	
 	display: inline-block;
 
 	width: 3.5vh;
