@@ -226,7 +226,7 @@ function startTimer(time) {
 
 		nTime.innerHTML = min + ':' + (sec < 10 ? '0' : '') + sec;
 
-		min == 0 && sec == 0 ? startExercise() : setTimeout(updateTimer, 1, --sec);
+		min == 0 && sec == 0 ? startExercise() : setTimeout(updateTimer, 1000, --sec);
 	}
 
 	updateTimer(time);
