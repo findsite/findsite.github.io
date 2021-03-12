@@ -17,7 +17,7 @@ let bricks = {
 if(bricks.names.length % 2 != 0) {
 	bricks.names.push(bricks.names[0]);
 	bricks.imgURLS.push(bricks.imgURLS[0]);
-	bricks.links.push('');
+	bricks.links.push('yadernaya-reakziya.html');
 	bricks.opacity.push(0);
 }
 
