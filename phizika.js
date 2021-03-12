@@ -1,4 +1,4 @@
-const Title = 'Химия';
+const Title = 'Физика';
 //!!!
 
 
@@ -8,10 +8,10 @@ document.title = Title;
 
 
 let bricks = {
-	names: ['Химические элементы', 'Таблица Менделеева', 'Хуй козла'],
-	imgURLS: ['https://cdn.discordapp.com/attachments/521767712792379414/677912701451894784/69cd1beeb08d46e8.jpg', 'https://cdn.discordapp.com/attachments/521767712792379414/677918763924062289/4268be0c154c53b1.jpg', 'https://cdn.discordapp.com/attachments/521767712792379414/677912701451894784/69cd1beeb08d46e8.jpg'],
-	links: ['chemistryfindelem.html', 'tablitza-mendeleeva.html'],
-	opacity: ['1','1','1']
+	names: ['Ядерные реакции'],
+	imgURLS: ['https://cdn.discordapp.com/attachments/521767712792379414/801907297600405504/96668c8bbbb6bc70.jpg'],
+	links: ['yadernaya-reakziya.html'],
+	opacity: ['1']
 }
 
 if(bricks.names.length % 2 != 0) {
