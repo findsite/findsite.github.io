@@ -1,0 +1,219 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+::-webkit-scrollbar {
+	width: 0;
+}
+html {
+	background-color: #111;
+	background-image: url("https://cdn.discordapp.com/attachments/521767712792379414/708677787732541460/2.jpg");
+	background-attachment: fixed;
+}
+
+
+#triangle {
+	background-color: #393939;
+
+	width: 35em;
+	height: 25em;
+
+	margin-top: 5vh;
+
+	border-radius: 10px;
+
+	box-shadow: 0 0 10px #000;
+
+	transform: scale(1.1);
+}
+#triangle #header {
+	color: #fff;
+	font-size: 150%;
+	font-weight: bold;
+	font-family: Calibri;
+}
+#triangle svg {
+	width: 100%;
+	height: 100%;
+}
+input {
+	position: absolute;
+
+	background-color: #292929;
+
+	width: 1.5em;
+	height: 2em;
+
+	border: solid;
+	border-width: 1px;
+	border-color: #252525;
+
+	color: #fff;
+	font-size: normal;
+	font-weight: bold;
+	font-family: Calibri;
+	font-variant: small-caps;
+	text-align: center;
+}
+#katet1 {
+	margin-top: 10em;
+	margin-left: -40.5em;
+}
+#katet2 {
+	margin-top: 17em;
+	margin-left: -30em;
+}
+#hypoten {
+	margin-top: 8em;
+	margin-left: -28em;
+}
+#triangleName {
+	position: relative;
+
+	width: 20vh;
+	height: 3vh;
+
+	font-size: 2vh;
+
+	margin-top: 2%;
+
+	border: solid;
+	border-color: #191919;
+	border-width: 1px;
+}
+.letter {
+	position: absolute;
+
+	color: #fff;
+	font-size: 150%;
+	font-weight: bold;
+	font-family: Calibri;
+}
+#a {
+	margin-top: -16em;
+	margin-left: 1em;
+}
+#b {
+	margin-top: -8.5em;
+	margin-left: 12.75em;
+}
+#c {
+	margin-top: -8.5em;
+	margin-left: 1em;
+}
+
+
+
+
+#start {
+	background-color: #444;
+
+	width: 30vh;
+	height: 2.5em;
+
+	border: none;
+	border-radius: 15px;
+
+	margin-top: 2%;
+	margin-bottom: 2%;
+
+	color: #fff;
+	font-size: 2vh;
+	font-weight: bold;
+}
+#solution {
+	background-color: #393939;
+
+	width: 50vh;
+	height: auto;
+
+	color: #fff;
+	font-size: 150%;
+	font-weight: bold;
+	font-family: Calibri;
+	text-align: left;
+
+	padding: 2%;
+	padding-left: 5%;
+
+	border-radius: 15px;
+
+	opacity: 0;
+}
+
+@media only screen and (max-width: 480px) {
+	#triangle {
+		width: 20em;
+		height: 20em;
+
+		border-radius: 0;
+
+		transform: scale(1);
+	}
+	#triangle #header {
+		font-size: 120%;
+	}
+	#katet1 {
+		margin-top: 10em;
+		margin-left: -22.5em;
+	}
+	#katet2 {
+		margin-top: 17em;
+		margin-left: -12em;
+
+	}
+	#hypoten {
+		margin-top: 8em;
+		margin-left: -10em;
+	}
+	#a {
+		margin-top: -12.5em;
+		margin-left: 1em;
+	}
+	#b {
+		margin-top: -5em;
+		margin-left: 12.75em;
+	}
+	#c {
+		margin-top: -5em;
+		margin-left: 1em;
+	}
+}
+@media only screen and (max-width: 1024px) and (min-width: 480px) {
+	#triangle {
+		width: 22.5em;
+		height: 20em;
+
+		border-radius: 0;
+
+		transform: scale(1);
+	}
+	#triangle #header {
+		font-size: 120%;
+	}
+	#katet1 {
+		margin-top: 10em;
+		margin-left: -25.5em;
+	}
+	#katet2 {
+		margin-top: 17em;
+		margin-left: -15em;
+
+	}
+	#hypoten {
+		margin-top: 8em;
+		margin-left: -13em;
+	}
+	#a {
+		margin-top: -12.5em;
+		margin-left: 1em;
+	}
+	#b {
+		margin-top: -5em;
+		margin-left: 12.75em;
+	}
+	#c {
+		margin-top: -5em;
+		margin-left: 1em;
+	}
+}
