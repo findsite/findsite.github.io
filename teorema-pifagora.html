@@ -1,40 +1,30 @@
-<!doctype html>
+<!DOCTYPE html>
 	<html>
-		<head>
-			<meta charset="UTF-8" name="viewport">
-			<LINK REL="stylesheet" HREF="default-math.css">
-            <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/521767712792379414/677502253942308874/2.png" type="image/x-icon">
-			<script src="teorema-pifagora.js"></script>
-				<title>Теорема Пифагора</title>
-		</head>
-		<body>
-			<div align="center">
-			  <div class="top">
-				<button onclick="resetCoef(); setCoef()" class="btn">Ввести длины сторон</button>
-			  </div>
-					<br/><br/><br/>
-					<div class="field-coef" align="center">
-						<div class="field-text">
-							<span id="fr-line"></span>
-							<span id="sc-line"></span>
-							<span id="fu-line"></span>
-							<span id="tr-line"></span>
-							<span id="fv-line"></span>
-							<span id="sx-line"></span>
-							<span id="sv-line"></span>
-							<span id="eg-line"></span>
-							<span id="nn-line"></span>
-							<span id="tn-line"></span>
-							<span id="el-line"></span>
-							<span id="tw-line"></span>
-							<span id="tn-line"></span>
-							<span id="fn-line"></span>
-							<span id="sn-line"></span>
-							<span id="sn-line"></span>
-							<span id="en-line"></span>
-							<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-						</div>
-				</div>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Теорема Пифагора</title>
+
+		<link rel="stylesheet" type="text/css" href="teorema-pifagora.css">
+		<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+		<script src="teorema-pifagora.js" defer></script>
+	</head>
+	<body>
+		<div id="container" align="center">
+			<div id="triangle">
+				<p id="header">Введите длины известных сторон (неизвестную обозначте за 'x')</p>
+				<svg style="stroke-width: 3; stroke: #fff">
+					<line x1='50' y1='50' x2='50' y2='220'/>
+					<line x1='50' y1='218.5' x2='300' y2='218.5'/>
+					<line x1='300' y1='219' x2='50' y2='50'/>
+				</svg>
+				<input type="text" id="katet1" value='1'>
+				<input type="text" id="katet2" value='2'>
+				<input type="text" id="hypoten" value='x'>
 			</div>
-		</body>
-	</html>
+			<input type="text" id="triangleName" placeholder="Название треуг. (АВС)"><br/>
+			<button id="start">Найти неизвестную сторону</button>
+			<div id="solution"></div>
+		</div>
+	</body>
+</html>
