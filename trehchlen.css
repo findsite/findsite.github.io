@@ -1,0 +1,116 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+::-webkit-scrollbar {
+	width: 0;
+}
+
+html {
+	background-color: #111;
+	background-image: url("https://cdn.discordapp.com/attachments/521767712792379414/708677787732541460/2.jpg");
+	background-attachment: fixed;
+}
+#container {
+	padding-bottom: 2.5%;
+}
+
+
+button {
+	display: block;
+}
+#formula {
+	width: 15%;
+	height: 2vh;
+
+	margin-top: 5%;
+
+	text-align: center;
+	font-size: 2vh;
+	font-weight: bold;
+}
+#formula::placeholder {
+	font-variant: small-caps;
+}
+#sqr-add, #start {
+	background-color: #222;
+
+	border: none;
+
+	color: #fff;
+	font-size: 2vh;
+	font-weight: bold;
+
+	margin-top: .5%;
+}
+#start {
+	background-color: #444;
+
+	width: 10%;
+
+	border-radius: 15px;
+
+	font-size: 3vh;
+
+	margin-top: 3%;
+
+	box-shadow: 0 0 15px #000;
+}
+hr {
+	width: 45%;
+
+	margin-top: 5%;
+	margin-bottom: 10%;
+}
+
+
+
+#solution {
+	background-color: #444;
+
+	width: 40%;
+	height: auto;
+
+	border-radius: 15px;
+
+	color: #fff;
+	font-size: 2.3vh;
+	font-weight: bold;
+	font-family: Calibri;
+
+	padding-top: .5%;
+	padding-bottom: .5%;
+	padding-left: 1.5%;
+
+	text-align: left;
+}
+#solution div {
+	display: inline-block;
+}
+
+.faction {
+	text-align: center;
+}
+.fc {
+	position: inherit;
+	border: solid;
+	border-color: #444 #444 #fff #444;
+	border-radius: 5px;
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+	#formula {
+		width: 30%;
+	}
+	#start {
+		width: 30%;
+	}
+	#solution {
+		width: 100%;
+
+		border-radius: 0;
+	}
+}
