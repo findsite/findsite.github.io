@@ -273,7 +273,7 @@ $(function() {
 
 			text += 'Разложение на линейные множители:<br/>'
 			text += (f[0] == '-' ? '-' : '') + (Math.pow(coefs[0],2) == 1 ? '' : toPos(coefs[0])) + 'x²' + signOf(coefs[1]) + (Math.pow(coefs[1],2) == 1 ? '' : toPos(coefs[1])) + 'x' + signOf(coefs[2]) + toPos(coefs[2]) + ' = ';
-			text += coefs[0] + '(x' + signOf(rad.x1) + (rad.x1 % 1 == 0 ? toPos(rad.x1) : rad.x1) + ')(x' + signOf(rad.x2) + (rad.x2 % 1 == 0 ? toPos(rad.x2) : rad.x2) + ')'; 
+			text += coefs[0] + '(x' + signOf(-rad.x1) + (rad.x1  === Number(rad.x1) ? toPos(rad.x1) : rad.x1) + ')(x' + signOf(-rad.x2) + (rad.x2 === Number(rad.x2) ? toPos(rad.x2) : rad.x2) + ')'; 
 		}
 		else {
 			text += 'Уравнение не имеет корней.';
@@ -293,6 +293,6 @@ $(function() {
 // Пиздец я заебался уже
 // Сука неделю на єту хуету потратил
 // Это кто-то вообще читает?
-// Я гений кнш сука все это будут читать всем же интересно что находится в конце джаваскирпт кода
+// кнш сука все это будут читать всем же интересно что находится в конце джаваскирпт кода
 
 });
