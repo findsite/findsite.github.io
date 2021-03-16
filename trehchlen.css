@@ -22,9 +22,10 @@ button {
 #formula {
 	background-color: #444;
 	
-	width: 40%;
-	height: 3vh;
+	width: 35%;
+	height: 4vh;
 	
+	border: none;
 	border-radius: 5px;
 
 	margin-top: 5%;
