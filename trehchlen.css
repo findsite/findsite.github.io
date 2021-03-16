@@ -103,7 +103,8 @@ hr {
 
 @media only screen and (max-width: 1024px) {
 	#formula {
-		width: 30%;
+		width: 50%;
+		height: 2.5vh;
 	}
 	#start {
 		width: 30%;
