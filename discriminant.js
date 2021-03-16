@@ -179,7 +179,7 @@ $(function() {
 					else {
 						let cd = -coefs[1] + D;
 						text += ' = ' + faction(cd, coefs[0] * 2);
-						if(cd > coefs[0] * 2) {
+						if(toPos(cd) >= coefs[0] * 2) {
 							if(tryToDivide(cd, coefs[0] * 2, cd, 'isCan')) {
 								let div = tryToDivide(cd, coefs[0] * 2);
 
@@ -236,7 +236,7 @@ $(function() {
 							text += ' = ' + faction(cd, coefs[0] * 2);
 							rad.x2 = faction(cd, coefs[0] * 2);
 
-							if(cd > coefs[0] * 2) {
+							if(toPos(cd) >= coefs[0] * 2) {
 								if(tryToDivide(cd, coefs[0] * 2, cd, 'isCan')) {
 									let div = tryToDivide(cd, coefs[0] * 2);
 
