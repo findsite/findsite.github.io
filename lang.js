@@ -118,5 +118,5 @@ let UK = {
 
 
 function getLang() {
-	return (window.localStorage.lang == 'RU' ? RU : UK);
+	return (window.localStorage.lang == 'UK' ? UK : RU);
 }
