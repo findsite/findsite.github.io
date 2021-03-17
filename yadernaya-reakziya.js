@@ -185,3 +185,16 @@ function decay() {
 function writeDecayElement() {
 	document.getElementById("p-decay").innerHTML = "<sub style='padding-left:" + (type == 'a' ? 1.8 : 5) + "vh'>" + decayElement.E_mass + "<span style='padding-left:" + (type == 'a' ? 7 : 8) + "vh'>" + (type == "a" ? 4 : 0) + "</span></sub><br/><span style='padding-left: 2vh; font-family: sans-serif'>→</span><span style='padding-left: 3vh'>" + decayElement.E_name + " +<span style='padding-left: 3vh'>" + (type == "a" ? "He" : "e") + "</span></span><br/><sup style='padding-left:" + (type == 'a' ? 2 : 5) + "vh'>" + decayElement.E_num + "<span style='padding-left:" + (type == 'a' ? 6.5 : 7) + "vh'>" + (type == 'a' ? 2 : -1) + "</sup>";
 }
+
+
+// Language
+
+let lang = getLang();
+
+document.getElementById('head').innerHTML = lang.yadernaya_reakziya[0];
+document.getElementById('element').placeholder = lang.yadernaya_reakziya[1];
+document.getElementById('ar').innerHTML = lang.yadernaya_reakziya[2];
+document.getElementById('br').innerHTML = lang.yadernaya_reakziya[3];
+
+
+
