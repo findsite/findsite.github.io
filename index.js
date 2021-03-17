@@ -9,11 +9,6 @@ let ids = [
 	"g-header",
 	"hr-group",
 ];
-let links = [
-	"https://findsite.github.io/phizika.html",
-	"https://findsite.github.io/himia.html",
-	"https://findsite.github.io/math.html"
-];
 let names = [
 	"phizika",
 	"himia",
@@ -46,10 +41,6 @@ function changeTheme(type) {
 		for(let i in ids) {
 			document.getElementById(ids[i]).style = "animation: " + ids[i] + t + " 1s forwards";
 		}
-
-		for(let i in links) {
-			document.getElementById("link-" + names[i]).href = links[i];
-		}
 	}
 }
 function setTheme(type) {
@@ -68,3 +59,10 @@ function text_in(group) {
 function text_out(group) {
 	document.getElementById("group-" + group).style = "animation: sectionOut .5s";
 }
+
+
+// Language
+let lang = getLang();
+
+
+document.getElementById('d-header').innerHTML = lang.index[0];
