@@ -6,9 +6,10 @@ const Title = 'Химия';
 document.title = Title;
 
 
+let lang = getLang();
 
 let bricks = {
-	names: ['Химические элементы', 'Таблица Менделеева'],
+	names: [lang.himia[0], lang.himia[1]],
 	imgURLS: ['https://cdn.discordapp.com/attachments/521767712792379414/677912701451894784/69cd1beeb08d46e8.jpg', 'https://cdn.discordapp.com/attachments/521767712792379414/677918763924062289/4268be0c154c53b1.jpg'],
 	links: ['chemistryfindelem.html', 'tablitzha-mendeleeva.html'],
 	opacity: ['1','1','1']
