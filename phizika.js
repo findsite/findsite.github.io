@@ -67,6 +67,6 @@ if(theme != 0) {
 	document.getElementById('html').style = 'background-color: #111';
 	document.getElementById('header').style = 'background-color: #333; border-color: #333 #333 #444 #333';
 	document.getElementById('home').src = 'https://cdn.discordapp.com/attachments/521767712792379414/691641762963259481/13.jpg';
-	document.getElementById('findsite').src = 'https://cdn.discordapp.com/attachments/521767712792379414/691640002202959942/findsitesmall.jpg;
+	document.getElementById('findsite').src = 'https://cdn.discordapp.com/attachments/521767712792379414/691640002202959942/findsitesmall.jpg";
 }
 
