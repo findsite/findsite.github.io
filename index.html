@@ -8,14 +8,18 @@
 		<link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/521767712792379414/677502253942308874/2.png" type="image/x-icon">
 		<link rel="stylesheet" href="index.css">
 		<link rel="stylesheet" href="dark-animation.css">
+		<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 		<script src="index.js" defer></script>
-		<script src="lang.js"></script>
+		<script src="lang.js" defer></script>
 	</head>
 	<body>
 		<div id="container" align="center">
 			<div id="header">
 				<p id="h-header">FindSite</p>
 
+				<div id="lang">
+					<p onclick="window.localStorage.lang = 'RU'">RU </p>|<p onclick="window.localStorage.lang = 'UK'"> UK</p>
+				</div>
 				<img src="https://cdn.discordapp.com/attachments/521767712792379414/691606321400643644/205f22f08f3f8f72.png" id="light-theme" onclick="changeTheme(0)">
 				<img src="https://cdn.discordapp.com/attachments/521767712792379414/691648991544344647/9d274401edcfbf21.png" id="dark-theme" onclick="changeTheme(1)">
 
@@ -31,7 +35,7 @@
 						<a href="phizika.html" class="section" id="link-phizika" onmouseover="text_in('phizika')" onmouseout="text_out('phizika')"><span class="name-of-section" id="group-phizika">Физика</span><img src="https://cdn.discordapp.com/attachments/802882425922912307/802902109984260116/c37b9de424ce4ccd.png"></a>
 					</li>
 					<li>
-						<a href="himia.html" class="section" id="link-himia" onmouseover="text_in('himia')" onmouseout="text_out('himia')"><span class="name-of-section" id="group-himia">Химия</span><img src="https://cdn.discordapp.com/attachments/521767712792379414/677894455222730774/2.png"></a>
+						<a href="chemistryfindelem.html" class="section" id="link-himia" onmouseover="text_in('himia')" onmouseout="text_out('himia')"><span class="name-of-section" id="group-himia">Химия</span><img src="https://cdn.discordapp.com/attachments/521767712792379414/677894455222730774/2.png"></a>
 					</li>
 					<li>
 						<a href="math.html" class="section" id="link-math" onmouseover="text_in('math')" onmouseout="text_out('math')"><span class="name-of-section" id="group-math">Математика</span><img src="https://cdn.discordapp.com/attachments/521767712792379414/710404544177242163/2.png"></a>
