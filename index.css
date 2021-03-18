@@ -67,11 +67,25 @@ html {
 	font-size: 2.25vh;
 	letter-spacing: 1.5px;
 }
+#lang {
+	position: absolute;
+
+	padding-left: 5vh;
+	padding-top: 4.25vh;
+}
+#lang, p {
+	display: inline-block;
+
+	font-size: 2vh;
+}
+#lang p {
+	cursor: pointer;
+}
 #light-theme {
-	margin-left: 35vh;
+	margin-left: 30vh;
 }
 #dark-theme {
-	margin-left: 45vh;
+	margin-left: 40vh;
 }
 
 
@@ -127,6 +141,11 @@ html {
 }
 
 @media only screen and (max-width: 1080px) {
+	#lang {
+		margin-left: -30vh;
+		padding-top: 2.5vh;
+	}
+
 	#light-theme {
 		margin-left: 7.5%;
 	}
