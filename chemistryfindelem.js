@@ -837,3 +837,16 @@ function number() {
         alert("Унуноктий\n+118 Uuo)2)8)18)32)58\n\nОтносительная атомная масса = [294]\n\nПорядковый номер - 118\n\nКол-во протонов = 118\nКол-во нейтронов = 176\nКол-во электронов = 118\n\nПериод - 7\nГруппа - 8 b\n\nОтносится к неметаллам");
     }
 } 
+
+
+// Language
+
+let lang = getLang();
+
+document.getElementById('hup').innerHTML = lang.chemistryfindelem[0];
+document.getElementById('nm').innerHTML = lang.chemistryfindelem[1];
+document.getElementById('np').innerHTML = lang.chemistryfindelem[2];
+document.getElementById('no').innerHTML = lang.chemistryfindelem[3];
+
+
+
