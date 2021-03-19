@@ -1,6 +1,17 @@
 $(function() {
-	$('#start').click(function() { ($('#katet1').val() != '' && $('#katet2').val() != '' && $('#hypoten').val() != '') ? start() : alert('Заполните необходимые поля') });
+	// Language
+	
+	let lang = getLang();
+	
+	$('#header').text(lang[0]);
+	$('#triangleName').attr('placeholder', lang[1]);
+	$('#start').text(lang[2]);
 
+	
+	
+	$('#start').click(function() { ($('#katet1').val() != '' && $('#katet2').val() != '' && $('#hypoten').val() != '') ? start() : alert(lang[3]) });
+	
+	
 
 	function findUnknownSide(returnType) {
 		if($('#katet1').val() % 1 != 0) {
@@ -76,7 +87,7 @@ $(function() {
 			text += '<br/>' + sides[x.value[0]] + sides[x.value[1]] + k + ' = ';
 			text += sides[0] + sides[1] + k + ' - ' + sides[1] + sides[2] + k + ' = ' + Math.pow($('#hypoten').val(), 2) + ' - ' + Math.pow($('#katet2').val(), 2) + ' = ' + (Math.pow($('#hypoten').val(), 2) - Math.pow($('#katet2').val(), 2)) + '<br/>';
 			if(Math.pow($('#hypoten').val(), 2) - Math.pow($('#katet2').val(), 2) <= 0) {
-				text += '<br/>Длина не может быть меньше либо равной нулю, соотвественно треугольник с введёнными сторонами не может существовать.';
+				text += '<br/>' + lang[4];
 			}
 			else {
 				text += sides[x.value[0]] + sides[x.value[1]] + ' = ' + radical(Math.pow($('#hypoten').val(), 2) - Math.pow($('#katet2').val(), 2)) + ' (см.)';
@@ -87,7 +98,7 @@ $(function() {
 			text += '<br/>' + sides[x.value[0]] + sides[x.value[1]] + k + ' = ';
 			text += sides[0] + sides[1] + k + ' - ' + sides[0] + sides[2] + k + ' = ' + Math.pow($('#hypoten').val(), 2) + ' - ' + Math.pow($('#katet1').val(), 2) + ' = ' + (Math.pow($('#hypoten').val(), 2) - Math.pow($('#katet1').val(), 2)) + '<br/>';
 			if(Math.pow($('#hypoten').val(), 2) - Math.pow($('#katet1').val(), 2) <= 0) {
-				text += '<br/>Длина не может быть меньше либо равной нулю, соотвественно треугольник с введёнными сторонами не может существовать.';
+				text += '<br/>' + lang[4];
 			}
 			else {
 				text += sides[x.value[0]] + sides[x.value[1]] + ' = ' + radical(Math.pow($('#hypoten').val(), 2) - Math.pow($('#katet1').val(), 2)) + ' (см.)';
@@ -97,7 +108,7 @@ $(function() {
 		if(x.type == 'Hypoten') {
 			text += ' = ' + Math.pow($('#katet1').val(), 2) + ' + ' + Math.pow($('#katet2').val(), 2) + ' = ' + (Math.pow($('#katet1').val(), 2) + Math.pow($('#katet2').val(), 2)) + '<br/>';
 			if(Math.pow($('#katet1').val(), 2) + Math.pow($('#katet2').val(), 2) <= 0) {
-				text += '<br/>Длина не может быть меньше либо равной нулю, соотвественно треугольник с введёнными сторонами не может существовать.';
+				text += '<br/>' + lang[4];
 			}
 			else {
 				text += sides[x.value[0]] + sides[x.value[1]] + ' = ' + radical(Math.pow($('#katet1').val(), 2) + Math.pow($('#katet2').val(), 2)) + ' (см.)';
