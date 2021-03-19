@@ -7,11 +7,12 @@ $(function() {
 	$('#start').click(function() { $('#formula').val() != '' ? start() : alert('Введите формулу') });
 
 
+	// Language
 
+	let lang = getLang();
 
-
-
-
+	$('#formula').attr('placeholder', lang[0]);
+	$('#start').text(lang[1]);
 
 
 
@@ -113,7 +114,7 @@ $(function() {
 		if(Math.pow(coefs[1],2) - 4 * coefs[0] * coefs[2] >= 0) {
 
 			if(f[0] == '-') {
-				text += '<br/>Умножим коэффициенты на -1: <br/>';
+				text += '<br/>' + lang[2] + '<br/>';
 
 				coefs[0] *= -1;
 				coefs[1] *= -1;
@@ -123,7 +124,7 @@ $(function() {
 			}
 			if(tryToDivide(coefs[0], coefs[1], coefs[2], 'isCan')) {
 				let divide = tryToDivide(coefs[0], coefs[1], coefs[2], 'getValue');
-				text += '<br/>Разделим коэффициенты на ' + divide + ':<br/>';
+				text += '<br/>' + lang[3] + ' ' + divide + ':<br/>';
 
 				coefs[0] /= divide;
 				coefs[1] /= divide;
@@ -139,7 +140,7 @@ $(function() {
 
 			text += "<p>";
 			if(coefs[0] == 1 && (rad.x1 % 1 == 0 && rad.x2 % 1 == 0)) {
-				text += "<br/><br/>Так как коэффициент 'a' = 1, решаем через теорему Виета:<br/><br/>";
+				text += "<br/><br/>' + lang[4] + '<br/><br/>";
 				text += 'x<sub>1</sub> + x<sub>2</sub> = ' + (coefs[1] * -1) + '<br/>';
 				text += 'x<sub>1</sub> ⋅ x<sub>2</sub> = ' + coefs[2] + '<br/>';
 				text += 'x<sub>1</sub> = ' + rad.x1 + '<br/>';
@@ -147,7 +148,7 @@ $(function() {
 
 			}
 			else {
-				text += '<br/><br/>Решаем через дискриминант:<br/><br/>';
+				text += '<br/><br/>' + lang[5] + '<br/><br/>';
 				text += 'D = b<sup>2</sup> - 4ac = ' + Math.pow(coefs[1], 2) + signOf(-4 * coefs[0] * coefs[2]) + toPos(-4 * coefs[0] * coefs[2]) + ' = ' + (Math.pow(coefs[1],2) - (4 * coefs[0] * coefs[2])) + '<br/>';
 				
 				let D = (Math.pow(coefs[1],2) - (4 * coefs[0] * coefs[2]));
@@ -271,12 +272,12 @@ $(function() {
 
 			coefs = oldCoefs;
 
-			text += 'Разложение на линейные множители:<br/>'
+			text += lang[6] + '<br/>'
 			text += (f[0] == '-' ? '-' : '') + (Math.pow(coefs[0],2) == 1 ? '' : toPos(coefs[0])) + 'x²' + signOf(coefs[1]) + (Math.pow(coefs[1],2) == 1 ? '' : toPos(coefs[1])) + 'x' + signOf(coefs[2]) + toPos(coefs[2]) + ' = ';
 			text += coefs[0] + '(x' + signOf(-rad.x1) + (rad.x1  === Number(rad.x1) ? toPos(rad.x1) : rad.x1) + ')(x' + signOf(-rad.x2) + (rad.x2 === Number(rad.x2) ? toPos(rad.x2) : rad.x2) + ')'; 
 		}
 		else {
-			text += 'Уравнение не имеет корней.';
+			text += 'lang[7];
 		}
 		
 
