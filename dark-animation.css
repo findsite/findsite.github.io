@@ -73,7 +73,14 @@
 	0% { border-color: #4277e0 }
 	100% { border-color: #fff }
 }
-
+@keyframes lang {
+	0% { color: #4277e0 }
+	100% { color: #fff }
+}
+@keyframes lang-rev {
+	0% { color: #fff }
+	100% { color: #4277e0 }
+}
 
 
 
@@ -92,7 +99,7 @@
 		100% { margin-top: 50%; opacity: 1 }
 	}
 	@keyframes sectionOut {
-	0% { margin-top: 50%; opacity: 1 }
-	100% { margin-top: 50%; opacity: 1 }
-}
+		0% { margin-top: 50%; opacity: 1 }
+		100% { margin-top: 50%; opacity: 1 }
+	}
 }
