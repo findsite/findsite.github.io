@@ -10,6 +10,7 @@ $(function() {
 	// Language
 
 	let lang = getLang();
+	lang = lang.trehchlen;
 
 	$('#formula').attr('placeholder', lang[0]);
 	$('#start').text(lang[1]);
