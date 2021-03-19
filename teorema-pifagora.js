@@ -2,6 +2,7 @@ $(function() {
 	// Language
 	
 	let lang = getLang();
+	lang = lang.teorema_pifagora;
 	
 	$('#header').text(lang[0]);
 	$('#triangleName').attr('placeholder', lang[1]);
