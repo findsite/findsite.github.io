@@ -278,7 +278,7 @@ $(function() {
 			text += coefs[0] + '(x' + signOf(-rad.x1) + (rad.x1  === Number(rad.x1) ? toPos(rad.x1) : rad.x1) + ')(x' + signOf(-rad.x2) + (rad.x2 === Number(rad.x2) ? toPos(rad.x2) : rad.x2) + ')'; 
 		}
 		else {
-			text += 'lang[7];
+			text += lang[7];
 		}
 		
 
