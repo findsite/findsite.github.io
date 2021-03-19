@@ -141,7 +141,7 @@ $(function() {
 
 			text += "<p>";
 			if(coefs[0] == 1 && (rad.x1 % 1 == 0 && rad.x2 % 1 == 0)) {
-				text += "<br/><br/>' + lang[4] + '<br/><br/>";
+				text += '<br/><br/>' + lang[4] + '<br/><br/>';
 				text += 'x<sub>1</sub> + x<sub>2</sub> = ' + (coefs[1] * -1) + '<br/>';
 				text += 'x<sub>1</sub> ⋅ x<sub>2</sub> = ' + coefs[2] + '<br/>';
 				text += 'x<sub>1</sub> = ' + rad.x1 + '<br/>';
