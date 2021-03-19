@@ -6,9 +6,10 @@ const Title = 'Математика';
 document.title = Title;
 
 
+let lang = getLang();
 
 let bricks = {
-	names: ['Трёхчлен', 'Теорема Пифагора'],
+	names: [lang[0], lang[1]],
 	imgURLS: ['https://cdn.discordapp.com/attachments/521767712792379414/710554832989323264/a65b761ca8ffb05f.jpg', 'https://cdn.discordapp.com/attachments/521767712792379414/712975119735062568/2.jpg'],
 	links: ['trehchlen.html', 'teorema-pifagora.html'],
 	opacity: ['1','1']
