@@ -8,6 +8,7 @@ let ids = [
 	"hr-header",
 	"g-header",
 	"hr-group",
+	"lang"
 ];
 let names = [
 	"phizika",
