@@ -264,6 +264,6 @@ function uuo() {
 // Language
 
 let lang = getLang();
-document.getElementById('t').innerHTML = lang.tablitzha_medneleeva[0]
+document.getElementById('t').innerHTML = lang.tablitzha_mendeleeva[0]
 
 
