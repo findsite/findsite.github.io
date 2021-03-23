@@ -68,6 +68,6 @@ document.getElementById('group-phizika').innerHTML = lang[2];
 document.getElementById('group-himia').innerHTML = lang[3];
 document.getElementById('group-math').innerHTML = lang[4];
 
-$('#lang').onclick(function() { alert(lang[5]) });
+$('#lang').click(function() { alert(lang[5]) });
 
 
