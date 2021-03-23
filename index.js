@@ -10,11 +10,6 @@ let ids = [
 	"hr-group",
 	"lang"
 ];
-let names = [
-	"phizika",
-	"himia",
-	"math"
-];
 
 // Take from localStorage previous theme (if it is)
 
@@ -64,12 +59,15 @@ function text_out(group) {
 
 // Language
 let lang = getLang();
+lang = lang.index;
 
 
-document.getElementById('d-header').innerHTML = lang.index[0];
-document.getElementById('g-header').innerHTML = lang.index[1];
-document.getElementById('group-phizika').innerHTML = lang.index[2];
-document.getElementById('group-himia').innerHTML = lang.index[3];
-document.getElementById('group-math').innerHTML = lang.index[4];
+document.getElementById('d-header').innerHTML = lang[0];
+document.getElementById('g-header').innerHTML = lang[1];
+document.getElementById('group-phizika').innerHTML = lang[2];
+document.getElementById('group-himia').innerHTML = lang[3];
+document.getElementById('group-math').innerHTML = lang[4];
+
+$('#lang').onclick(function() { alert(lang[5]) });
 
 
