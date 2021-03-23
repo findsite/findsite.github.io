@@ -7,6 +7,10 @@
 	font-family: Calibri;
 	font-weight: bold;
 }
+img {
+	width: auto;
+	height: auto;
+}
 ::-webkit-scrollbar {
 	width: 0;
 }
