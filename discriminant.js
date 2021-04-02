@@ -61,6 +61,7 @@ $(function() {
 			}
 			
 		}
+		
 		return -1;
 	}
 	function countNumbersAfterDot(num) {
