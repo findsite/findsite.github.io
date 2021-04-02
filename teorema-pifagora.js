@@ -1,6 +1,6 @@
 $(function() {
-	// Language
 	
+	// Language	
 	let lang = getLang();
 	lang = lang.teorema_pifagora;
 	
