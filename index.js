@@ -47,7 +47,7 @@ function setTheme(type) {
 	}
 }
 
-// Animations for the name of the section 
+// Animations for the names of the sections
 
 function text_in(group) {
 	document.getElementById("group-" + group).style = "animation: sectionIn .4s forwards";
