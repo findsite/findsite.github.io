@@ -1,22 +1,53 @@
 <!DOCTYPE html>
-<html id='html'>
+	<html lang="ru">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title></title>
+		<title>Пизда</title>
 
-		<link rel="shorcut icon" href="https://cdn.discordapp.com/attachments/521767712792379414/677502253942308874/2.png" type="image/x-icon">
-		<link rel="stylesheet" href="section.css">
-		<script src="lang.js"></script>
-		<script src="phizika.js" defer></script>
+		<link rel="stylesheet" href="index.css">
+		<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+		<script src="index.js" defer></script>
 	</head>
 	<body>
+		<header>
+			<p id="counter">1</p>
+		</header>
 		<div id="container">
-			<div id="header">
-				<a href="index.html"><img id="home" src="https://cdn.discordapp.com/attachments/521767712792379414/677936529074552856/2b5ab898b200ccf1.jpg" alt="Вернуться на главную страницу"></a>
-				<img id="findsite" src="https://cdn.discordapp.com/attachments/521767712792379414/677940115494010921/logo.jpg" alt="FindSite">
+			<div id="first-slide" class="slide">
+				<div id="title">
+					<h1>Чому масу називають мірою енергії</h1>
+					<h3>Автор: Печерский вова и айзамат айзалиев</h3>
+				</div>
 			</div>
-			<ul id="bricks-list" class="b-l"></ul>
-		</div>
+			<div id="second-slide" class="slide">
+				<div id="title">
+					Відповідно до теорії відносності будь-яка енергія еквівалентна масі. Тобто, енергію тіла можна виразити через масу відомою нам усім формулою <i>E=mc<sup>2</sup></i>
+				</div>
+				<img src="https://probapera.org/content/publication/PH54100_2.JPG" alt="Энштэйн">
+			</div>
+			<div id="third-slide" class="slide">
+				<div id="text">
+					Зменшення маси під час ядерної реакції називається «дефект мас», тобто при виділенні енергії ядром атома, воно зменшується в масі. Визначається ця енергія за тою ж формулою з невеликою редакцією: <i>E=Δmc2</i>.<br/> Це вказує нам, що енергія зв’язку між нуклонами ядра має масу. Так, наприклад, атом гелію, що містить чотири нуклони, має масу на 0, 8% меншу, ніж сумарна маса чотирьох ядер гідрогену (які містять один нуклон кожен). Бо для того, щоб з’єднати 4 нуклони гідрогену в ядро гелію, потрібно докласти енергію, виконати роботу. Саме вона й перетворюється на додаткову масу ядра гідрогену.
+				</div>
+				<div id="img">
+					<i>Історія питання залежності маси та енергії</i>
+					<img src="https://cdn.discordapp.com/attachments/521767712792379414/844305612560924672/unknown.png">
+				</div>
+			</div>
+			<div id="fourth-slide" class="slide">
+				Альберт Ейнштейн також вивів формулу <br/><i>E=mc<sup>2</sup></i> в своєму дослідженні в 1905 року, розглядаючи поведінку об`єкта, що рухається зі швидкістю, близькою до швидкості світла. Звідси він зробив висновок про те, що маса тіла є мірою його енергії спокою:<br/><br/>
+
+		Енергія спокою = Маса × (швидкість світла) у квадратi.<br/><br/>
+
+		Відповідно до даної рівності, максимальна енергія, яку можна отримати від об`єкта, дорівнює добутку маси об`єкта на квадрат швидкості світла.
+
+		Біограф Ейнштейна А. Пайс пише, що співвідношення між масою і енергією, яке виражається формулою Е=mc2, дійсно було відомо для окремих випадків ще за 25 років до Ейнштейна. Але стверджує, що той вперше узагальнив його на всі явища природи. Згідно Умберто Барточчі (історику математики з університету Перуджі), рівняння, що зв`язує масу і енергію, було також опубліковано за два роки до Ейнштейна Олінто де Претто, промисловцем з міста Віченца в Італії.
+
+		<img src="https://korotko.info/wp-content/uploads/2019/05/%D0%95%D0%BD%D0%B5%D1%80%D0%B3%D1%96%D1%8F.png" alt="хз">
+			</div>
+			<div id="fifth-slide" class="slide">
+				<img src="https://cdn.discordapp.com/attachments/521767712792379414/844315252417101834/0-02-05-3f9ab5dd458f02f394b73a03a900583371df2bee32284c9ad3555916b8be13fc_572954057f2e534f.jpg">
+			</div>
 	</body>
 </html>

@@ -1,0 +1,114 @@
+* {
+	padding: 0;
+	margin: 0;
+
+	cursor: default;
+}
+::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+}
+header {
+	position: fixed;
+
+	width: 100%;
+
+	text-align: right;
+}
+#counter {
+	padding-right: 1%;
+
+	color: #fff;
+	font-size: 150%;
+	font-weight: bold;
+	font-family: Calibri;
+}
+
+
+.slide {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+#first-slide {
+	background: linear-gradient(45deg, #CF1CFF, #00D599);
+}
+#first-slide #title {
+	border: solid;
+	border-color: #fff;
+	border-width: 0 0 0 7.5px;
+	border-radius: 10px 0 0 5px;
+
+	color: #fff;
+	font-family: Calibri;
+
+	padding-left: 5%;
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+}
+#first-slide #title h1 {
+	font-size: 2.5em;
+}
+#first-slide #title h3 {
+	font-size: 1.5em;
+
+	padding-top: 5%;
+	padding-left: 2.5%;
+}
+
+#second-slide {
+	background-color: #8F4AAA;
+}
+#second-slide #title {
+	color: #fff;
+	font-family: Calibri;
+	font-size: 2em;
+	text-align: center;
+
+	padding-bottom: 5%;
+}
+#second-slide img {
+	width: 30em;
+}
+
+#third-slide {
+	background-color: #00B392;
+
+	flex-direction: row;
+
+	color: #fff;
+	font-family: Calibri;
+}
+#third-slide #text {
+	margin-left: 3%;
+	padding-right: 2%;
+
+	font-size: 1.5em;
+}
+#third-slide #img {
+	margin-right: 3%;
+}
+
+#fourth-slide {
+	background-color: #006F18;
+
+	color: #fff;
+	font-family: Calibri;
+	font-size: 1.8em;
+	text-align: center;
+}
+#fourth-slide img {
+	width: 15em;
+
+	margin-top: 5em;
+
+	border-radius: 15px;
+}
+
+#fifth-slide {
+	background-color: #000;
+}
+#fifth-slide img {
+	height: 100%;
+}
