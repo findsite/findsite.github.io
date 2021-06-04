@@ -11,7 +11,7 @@ let lang = getLang();
 let bricks = {
 	names: [lang.phizika[0]],
 	imgURLS: ['https://cdn.discordapp.com/attachments/521767712792379414/801907297600405504/96668c8bbbb6bc70.jpg'],
-	links: ['yadernaya-reakziya.html'],
+	links: ['yadernaya-reakziya'],
 	opacity: ['1']
 }
 
