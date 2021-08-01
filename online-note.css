@@ -1,0 +1,103 @@
+#choose-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	padding-left: 25%;
+	padding-right: 25%;
+
+	list-style-type: none;
+}
+#choose-list li {
+	cursor: pointer;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 40%;
+	height: 40%;
+
+	background-size: 100%;
+	background-repeat: no-repeat;
+
+	border: solid 5px #bbb;
+	border-radius: 30px;
+
+	font-size: 1.8em;
+	font-weight: bold;
+	font-family: Calibri;
+	letter-spacing: 3px;
+
+	animation: li-in .6s forwards;
+
+	opacity: 0;
+}
+#choose-list li:hover {
+	animation: li-out .4s forwards;
+}
+
+#fLi {
+	background: linear-gradient(45deg, #00AFFF, #FF8000);
+}
+#sLi {
+	background: linear-gradient(45deg, #E200FF, #00FF6F);
+ }
+
+
+
+
+
+
+@media only screen and (max-width: 1080px) {
+	#choose-list {
+		flex-direction: column;
+		justify-content: space-around;
+
+		padding: 0;
+	}
+	#choose-list li {
+		width: 60%;
+		height: 30%;
+
+		border-width: 2px;
+		border-radius: 20px;
+
+		animation: none;
+	}
+	#choose-list li:hover {
+		animation: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes li-out {
+	0% {
+		letter-spacing: 3px;
+		background-size: 500%;
+	}
+	100% {
+		letter-spacing: 5px;
+		background-size: 100%;
+	}
+}
+@keyframes li-in {
+	0% {
+		letter-spacing: 5px;
+		background-size: 100%;
+	}
+	100% {
+		letter-spacing: 3px;
+		background-size: 500%;
+	}
+}

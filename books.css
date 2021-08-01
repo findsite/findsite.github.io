@@ -1,0 +1,36 @@
+#books-list ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding-top: 5%;
+
+	list-style-type: none;
+}
+#books-list ul li {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #eee;
+
+	width: 30vh;
+	height: 30vh;
+
+	margin: 5%;
+
+	border-radius: 15px;
+
+	font-size: 1.1em;
+	font-weight: bold;
+	font-family: Calibri;
+	text-align: center;
+}
+#books-list ul li p {
+	background-color: #a33;
+
+	width: 80%;
+
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
