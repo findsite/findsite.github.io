@@ -1,3 +1,18 @@
+
+
+/*
+
+
+	
+			SITE VERSION: B-0.2
+
+
+
+*/
+
+
+
+
 let weekDays = [
 	'Воскресенье',
 	'Понедельник',
@@ -16,7 +31,7 @@ $('#container').css('height', window.innerHeight);
 let time = new Date();
 let month = time.getMonth() + 1;
 
-$('header span').eq(0).text(time.getDate() + '.' + (month.length > 1 ? '' : '0') + month + '.' + time.getFullYear() + ' ' + weekDays[time.getDay()]);
+$('header span').eq(0).text((time.getDate().length > 1 ? '' : '0') + time.getDate() + '.' + (month.length > 1 ? '' : '0') + month + '.' + time.getFullYear() + ' ' + weekDays[time.getDay()]);
 
 
 
