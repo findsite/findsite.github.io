@@ -1,0 +1,1 @@
+document.getElementsByTagName('header')[0].style.height = (window.innerHeight / 8.5) + 'px';
