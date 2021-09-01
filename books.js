@@ -3,23 +3,26 @@ setTimeout( () => { $('ul').eq(0).animate({ opacity: 1 }, animateTimeMS) }, anim
 
 
 
-let books = [
-	'https://drive.google.com/file/d/1Nr_1-GGD4MX5msIm9uWb3t_3nVqueNId/preview',
-	'https://drive.google.com/file/d/1wwdpuhk6Ags0a8Gegr3mpG-In2SIlJSN/preview',
-]
+
 let lessonNames = [
-	'Алгебра',
-	'Геометрия'
-]
-let previewURL = [
-	'https://cdn.discordapp.com/attachments/602251277879214080/872102662341017680/unknown.png',
-	'https://cdn.discordapp.com/attachments/602251277879214080/872240042054131783/unknown.png'
+	'Математика',
+	'Украинский Язык',
+	'Украинская Литература',
+	'Английский Язык',
+	'Физика',
+	'Химия',
+	'Биология и Экология',
+	'География',
+	'Громадянська Освіта',
+	'Всемирная История',
+	'История Украины',
+	'Искусство',
 ]
 
 
 let rowCount = -1;
 
-for(let i = 0; i < books.length; i++) {
+for(let i = 0; i < lessonNames.length; i++) {
 	if(i % 2 == 0) {
 		$('#books-list').append('<ul class="books-block"></ul>');
 		rowCount++;
@@ -27,10 +30,10 @@ for(let i = 0; i < books.length; i++) {
 	let nLi = document.createElement('li')
 	let nImg = document.createElement('img')
 	let nP = document.createElement('p')
-	nImg.src = previewURL[i];
+	nImg.src = lessonNames[i] + '.png';
 	nP.innerText = lessonNames[i];
 	nLi.onclick = function() {
-		setBook(books[i]);
+		setBook(lessonNames[i] + '.pdf');
 	}
 
 	$('#books-list ul').eq(rowCount).append(nLi);
