@@ -3,9 +3,7 @@ console.log('Code By S⅄? MrKidics');
 console.log('Join S⅄? Clan for getting the latest versions of Myagar hack client');
 $('p').eq(6).text('Updated by S⅄? MrKidics');
 
-let style = document.createElement('style');
-style.innerText = '.swal2-container { opacity: 0 }';
-document.head.appendChild(style);
+
 
 
 
@@ -18,15 +16,10 @@ document.head.appendChild(style);
 // Rainbow Feeder
 
 
-let inp = document.createElement('input');
-inp.id = 'rainbowFeeder';
-inp.style = 'opacity: 0; height: 1px';
-$('#div_lb').append(inp);
-
 setInterval(changeColor, 100);
 
-let c = 0;
 let rainbow = false;
+let c = 0;
 
 let nBut = document.createElement('button');
 nBut.className = 'play';
@@ -53,9 +46,36 @@ function toHex(int){
 }
 
 function changeColor() {
-    if(rainbow) {
-	    updateFeedColor(colors[c]);
-        $('.swal2-container').css('opacity', '0');
-	    c == colors.length - 1 ? c = 0: c++;
-    }
+	updateFeederColor(colors[c])
+	c == colors.length - 1 ? c = 0; c++;
 }
+
+
+
+
+
+// Spam Hack
+
+
+nBut = document.createElement('button');
+nBut.className = 'spectate';
+nBut.innerHTML = 'Spam';
+nBut.style = 'background-color: #DD4200; border-color: #962D00; box-shadow: 0 3px #962D00';
+nBut.onclick = function() {
+    let m = prompt('Enter a spam-message');
+	let s = prompt('Enter how many messages will spam');
+	let n = prompt('Enter a nickname from which spam will do (Enter "Default") to use ur current nickname');
+	if(n.toLowerCase() == 'default') n = $('#nick').text();
+	let i = 0;
+
+	let spamInterval = setInterval(spam, 500);
+
+	function spam() {
+	    connect('wss://play.imbig.pro:1450');
+	    setNick(n);
+	    setTimeout(()=>{chatRoom.sendMessageToServer(m)}, 400);
+	    if(i == s) clearInterval(spamInterval);
+	    i++;
+	}
+}
+document.getElementsByClassName('clearfix')[2].appendChild(nBut);
