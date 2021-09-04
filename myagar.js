@@ -18,8 +18,12 @@ $('p').eq(6).text('Updated by S⅄? MrKidics');
 
 setInterval(changeColor, 100);
 
-let rainbow = false;
 let c = 0;
+let rainbow = false;
+
+let style = document.createElement('style');
+style.innerText = '.swal2-container { opacity: 0 }';
+document.head.appendChild(style);
 
 let nBut = document.createElement('button');
 nBut.className = 'play';
@@ -46,8 +50,10 @@ function toHex(int){
 }
 
 function changeColor() {
-	updateFeederColor(colors[c])
-	c == colors.length - 1 ? c = 0; c++;
+    if(rainbow) {
+	    updateFeedColor(colors[c]);
+	    c == colors.length - 1 ? c = 0: c++;
+    }
 }
 
 
