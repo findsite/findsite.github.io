@@ -90,7 +90,7 @@ let currentTime = new Date();
 
 for(let i = 0; i < 5; i++) {
 	let nextTime = currentTime.getDate() - (currentTime.getDay() - weekDays.indexOf($('tr').eq(i).text()));
-	$('p').eq(i).text($('tr').eq(i).text() + ' ∙ ' + (nextTime.length > 1 ? nextTime : '0' + nextTime) + '.' + (currentTime.getMonth().length > 1 ? currentTime.getMonth() : '0' + currentTime.getMonth()) + '.' + currentTime.getFullYear());
+	$('p').eq(i).text($('tr').eq(i).text() + ' ∙ ' + (nextTime.toString().length > 1 ? nextTime : '0' + nextTime) + '.' + (currentTime.getMonth().toString().length > 1 ? currentTime.getMonth() : '0' + currentTime.getMonth()) + '.' + currentTime.getFullYear());
 }
 
 for(let i = 0; i < btnCount; i++) {
