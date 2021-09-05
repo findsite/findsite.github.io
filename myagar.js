@@ -3,6 +3,17 @@ console.log('Code By S⅄? MrKidics');
 console.log('Join S⅄? Clan for getting the latest versions of Myagar hack client');
 $('p').eq(6).text('Updated by S⅄? MrKidics');
 
+document.getElementById('play-btn').onclick = function() {
+	checkNickname();
+}
+function checkNickname() {
+	let n = $('#nick').val()
+	let finalNick = n;
+	if(n[0] != 'S' && n[1] != '⅄' && n[2] != '?') finalNick = 'S⅄? ' + n;
+
+	setNick(finalNick); 
+}
+
 
 
 
