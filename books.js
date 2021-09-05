@@ -20,19 +20,19 @@ let lessonNames = [
 	'Искусство',
 ];
 let URLs = [
-	'https://drive.google.com/file/d/1nxJHpdEI_J1PVLRf6p9qrbVqPPaU79IW/view?usp=sharing',
-	'https://drive.google.com/file/d/1afjh3kn2btppxsLpWMSd7A529IOcRGQ0/view?usp=sharing',
-	'https://drive.google.com/file/d/1CMJdbvX92LGUzHDpxJLSIv7TYo6SvuPI/view?usp=sharing',
-	'https://drive.google.com/file/d/1TmswLGMEZ4c7Cc82DqEICmD6bBB_dZUn/view?usp=sharing',
-	'https://drive.google.com/file/d/14bfqYLk9PkFlfpKqIO07hg9DnrT-8lZ4/view?usp=sharing',
-	'https://drive.google.com/file/d/1dXa-WbduGXW3IZQnaNYYLuJDW-IRIUPE/view?usp=sharing',
-	'https://drive.google.com/file/d/1yybnxtPx689f09_CTtDzL0saTND25jN_/view?usp=sharing',
-	'https://drive.google.com/file/d/1bLbj9Mv7T-vTZTsix4uumS1XiTpyv4Yj/view?usp=sharing',
-	'https://drive.google.com/file/d/1S3GBrjq-Usrmvw--FHerMOvWeP27uiiH/view?usp=sharing',
-	'https://drive.google.com/file/d/1K36CggQCGF-NBX1u4hh8XaYoDnJNe_ls/view?usp=sharing',
-	'https://drive.google.com/file/d/1UYSR4QcGSoGLs88fqlcCxD_VfJnb9RCL/view?usp=sharing',
-	'https://drive.google.com/file/d/1_Vc5WQqCCsPJ2t_y_QRtbf45n-Q6SA6W/view?usp=sharing',
-	'https://drive.google.com/file/d/1VBIN660RK5VFs77P-1MHt-8DNG-lAJu_/view?usp=sharing',
+	'https://drive.google.com/file/d/1nxJHpdEI_J1PVLRf6p9qrbVqPPaU79IW/preview',
+	'https://drive.google.com/file/d/1afjh3kn2btppxsLpWMSd7A529IOcRGQ0/preview',
+	'https://drive.google.com/file/d/1CMJdbvX92LGUzHDpxJLSIv7TYo6SvuPI/preview',
+	'https://drive.google.com/file/d/1TmswLGMEZ4c7Cc82DqEICmD6bBB_dZUn/preview',
+	'https://drive.google.com/file/d/14bfqYLk9PkFlfpKqIO07hg9DnrT-8lZ4/preview',
+	'https://drive.google.com/file/d/1dXa-WbduGXW3IZQnaNYYLuJDW-IRIUPE/preview',
+	'https://drive.google.com/file/d/1yybnxtPx689f09_CTtDzL0saTND25jN_/preview',
+	'https://drive.google.com/file/d/1bLbj9Mv7T-vTZTsix4uumS1XiTpyv4Yj/preview',
+	'https://drive.google.com/file/d/1S3GBrjq-Usrmvw--FHerMOvWeP27uiiH/preview',
+	'https://drive.google.com/file/d/1K36CggQCGF-NBX1u4hh8XaYoDnJNe_ls/preview',
+	'https://drive.google.com/file/d/1UYSR4QcGSoGLs88fqlcCxD_VfJnb9RCL/preview',
+	'https://drive.google.com/file/d/1_Vc5WQqCCsPJ2t_y_QRtbf45n-Q6SA6W/preview',
+	'https://drive.google.com/file/d/1VBIN660RK5VFs77P-1MHt-8DNG-lAJu_/preview',
 ]
 
 
