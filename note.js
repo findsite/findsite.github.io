@@ -86,10 +86,11 @@ nTr.innerHTML= '<p></p>';
 $('table').eq(0).append(nTr);
 
 let currentTime = new Date();
+let currentMonth = currentTime.getMonth() + 1;
 
 for(let i = 0; i < 5; i++) {
 	let nextTime = currentTime.getDate() - (currentTime.getDay() - weekDays.indexOf($('tr').eq(i).text()));
-	$('p').eq(i).text($('tr').eq(i).text() + ' ∙ ' + (nextTime.toString().length > 1 ? nextTime : '0' + nextTime) + '.' + (currentTime.getMonth().toString().length > 1 ? currentTime.getMonth() : '0' + currentTime.getMonth()) + '.' + currentTime.getFullYear());
+	$('p').eq(i).text($('tr').eq(i).text() + ' ∙ ' + (nextTime.toString().length > 1 ? nextTime : '0' + nextTime) + '.' + (currentMonth.toString().length > 1 ? currentMonth : '0' + currentMonth) + '.' + currentTime.getFullYear());
 }
 
 for(let i = 0; i < btnCount; i++) {
