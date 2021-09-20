@@ -21,7 +21,7 @@ let lessonNames = [
 ];
 let URLs = [
 	'https://drive.google.com/file/d/1nxJHpdEI_J1PVLRf6p9qrbVqPPaU79IW/preview',
-	'https://drive.google.com/file/d/1afjh3kn2btppxsLpWMSd7A529IOcRGQ0/preview',
+	'https://drive.google.com/file/d/1h7NnkroAb9MDzdZOUVNaysyFIFzyWp_5/preview',
 	'https://drive.google.com/file/d/1CMJdbvX92LGUzHDpxJLSIv7TYo6SvuPI/preview',
 	'https://drive.google.com/file/d/1TmswLGMEZ4c7Cc82DqEICmD6bBB_dZUn/preview',
 	'https://drive.google.com/file/d/14bfqYLk9PkFlfpKqIO07hg9DnrT-8lZ4/preview',
