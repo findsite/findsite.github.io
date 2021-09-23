@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+
+
+
+
+* {
+    cursor: default;
+
+    padding: 0;
+    margin: 0;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+html {
+    background-color: #fff;
+
+    height: 1000vh;
+}
+#shop-header-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: #000;
+
+    color: #fff;
+
+    width: 100%;
+}
+#shop-info {
+    padding-left: 10%;
+    padding-bottom: 10%;
+    padding-right: 5%;
+
+    border: solid;
+    border-color: #fff;
+    border-width: 0 5px 0 0;
+}
+#shop-name {
+    font-size: 5.5rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    letter-spacing: 3px;
+}
+#shop-description {
+    padding-top: 5%;
+    padding-left: 2%;
+
+    font-family: 'Nunito Sans', sans-serif;
+
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+#shop-name::selection,
+#shop-description::selection {
+    background: #fff;
+    color: #000;
+}
+#cube {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #eee;
+
+    width: 16em;
+    height: 16em;
+
+    margin-left: 25%;
+
+    border-radius: 3px;
+
+    box-shadow: 10px 10px 7.5px #999;
+}
+#text {
+    color: #000;
+    font-size: 2.5rem;
+    font-family: Calibri;
+    text-transform: uppercase;
+    text-align: center;
+}
+#text::selection {
+    background-color: #eee;
+}
+.scroll-down {
+    position: absolute;
+
+    overflow: hidden;
+
+    background-color: #000;
+
+    width: 50px;
+    height: 50px;
+
+    border: solid 1px;
+    border-radius: 100%;
+
+    animation: scroll-out .3s forwards;
+}
+.scroll-down:hover {
+    animation: scroll-hover .3s forwards;
+}
+
+header {
+    position: fixed;
+
+    background-color: #fff;
+    backdrop-filter: blur(10px);
+    background: rgba(200, 200, 200, 0.2);
+
+    width: 100%;
+
+    border: solid;
+    border-color: rgb(200, 200, 200);
+    border-width: 0 0 3px 0;
+
+    opacity: 0;
+
+    z-index: 2;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 50%;
+    height: 2.5em;
+
+    font-size: 3em;
+    font-family: Calibri;
+    font-variant: small-caps;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    opacity: 0;
+}
+#header-shop-name {
+    display: flex;
+    align-items: center;
+
+    border: solid;
+    border-color: rgb(200, 200, 200);
+    border-width: 0 2px 0 0;
+
+    padding-left: 2em;
+    padding-right: 2em;
+    height: 100%;
+}
+#categories p,
+#categories span {
+    cursor: pointer;
+}
+#header-shop-name p::selection,
+#categories span::selection,
+#categories p::selection {
+    color: #000;
+}
+#categories-list {
+    position: absolute;
+
+    background-color: #eee;
+
+    height: 0;
+
+    margin-top: .7em;
+    padding-right: 1.25em;
+
+    opacity: 0;
+
+    list-style-type: none;
+
+    box-shadow: 0 5px 5px #ccc;
+
+    z-index: 0;
+}
+#categories-list li {
+    width: 100%;
+
+    font-size: 0;
+
+    padding-left: 3%;
+    padding-right: 1em;
+}
+#categories-list hr {
+    background-color: #000;
+    border: solid;
+    border-color: #000;
+    border-width: 2px;
+
+    width: 0;
+}
+.category {
+    padding-top: 5em;
+    padding-bottom: 5em;
+
+    border: solid;
+    border-color: #ddd;
+    border-width: 0 0 5px 0;
+    border-radius: .5em;
+}
+#mobile-hr {
+    display: none;
+}
+#product-list {
+    margin-top: 10em;
+    padding-bottom: 5em;
+}
+#product-list h3 {
+    font-size: 5em;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-shadow: -5px -5px 0 #000;
+
+    background: repeating-linear-gradient(45deg, #888, #999 1px, white 2px, white 3px);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    display: table;
+
+    margin: 20px auto;
+}
+.category-name::selection {
+    background: #eee;
+    color: #000;
+}
+.category-line {
+    width: 10%;
+
+    margin-top: 3%;
+}
+.list {
+    list-style-type: none;
+
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+.product {
+    cursor: pointer;
+
+    background-color: #eee;
+
+    width: 20%;
+
+    margin: 75px;
+
+    border-radius: 2vh;
+
+    z-index: 1;
+}
+.product * {
+    cursor: pointer;
+
+    color: #000;
+    text-decoration: none;
+}
+.product-name {
+    font-family: Calibri;
+    font-size: 2rem;
+
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.product hr {
+    width: 1px;
+    
+    border-radius: 100%;
+
+    margin-top: 10%;
+    margin-bottom: 6%;
+}
+.product img {
+    width: 97.5%;
+    height: auto;
+
+    border-radius: 2vh;
+}
+.price {
+    color: #aaa;
+    font-size: 1.5em;
+    font-family: Calibri;
+}
+
+
+
+
+@media only screen and (max-width: 1242px) {
+    #shop-header-info {
+        flex-direction: column;
+    }
+    #mobile-hr {
+        display: block;
+
+        background-color: #fff;
+
+        width: 60%;
+        border-color: #fff;
+        border-width: 2px;
+    }
+    #shop-info {
+        padding: 0;
+
+        text-align: center;
+
+        border-width: 0;
+
+        width: 100%;
+    }
+    #shop-name {
+        font-size: 400%;
+        font-family: Calibri;
+        letter-spacing: 3px;
+
+        padding-top: 10%;
+    }
+    #shop-description {
+        font-size: 2em;
+
+        padding: 10%;
+    }
+    #cube {
+        width: 18em;
+        height: 18em;
+
+        border-radius: 3px;
+
+        padding: 0;
+        margin: 0;
+        margin-top: 25%;
+
+        box-shadow: 0 0 0;
+    }
+    #product-list {
+        margin-top: 10em;
+    }
+    #product-list h3 {
+        font-size: 250%;
+    }
+    .category-line {
+        width: 25%;
+    }
+    .product {
+        display: inline;
+
+        width: 75%;
+
+        margin: 0;
+        margin-top: 50px;
+    }
+    .product img {
+        width: 97.5%;
+        height: auto;
+
+        border-radius: 2vh;
+    }
+    .price {
+        color: #000;
+    }
+    @media only screen and (max-height: 1080px) {
+        #shop-header-info {
+            align-items: center;
+            justify-content: center;
+        }
+        #mobile-hr {
+            display: none;
+        }
+        #shop-info {
+            border: none;
+        }
+        #cube {
+            display: none;
+        }
+    }
+}
+@media only screen and (max-width: 687px) {
+    #header-shop-name {
+        border: none;
+
+        text-align: center;
+
+        width: 100%;
+
+        padding: 0;
+        margin: 0;
+    }
+    #product-list {
+        margin-top: 10em;
+    }
+}
+@media only screen and (min-width: 2048px) {
+    #shop-name {
+        font-size: 12.5vh;
+    }
+    #shop-description {
+        font-size: 2.5vh;
+    }
+    #cube {
+        width: 25vh;
+        height: 25vh;
+    }
+    #text {
+        font-size: 4vh;
+    }
+}
+
+
+
+@keyframes scroll-out {
+    0% { background-color: #232325 }
+    100% { background-color: #000 }
+}
+@keyframes scroll-hover {
+    0% { background-color: #000 }
+    100% { background-color: #232325 }
+}
+@keyframes dark-light {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes show {
+    0% {
+        opacity: 0;
+        height: 0;
+    }
+    100% {
+        opacity: 1;
+        height: 7.5em;
+    }
+}
+@keyframes showHeader {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes hide {
+    0% {
+        opacity: 1;
+        height: 7.5em;
+    }
+    100% {
+        opacity: 0;
+        height: 0;
+    }
+}
+@keyframes hideHeader {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes upB {
+    0% {
+        transform: scale(1)
+    }
+    100% {
+        transform: scale(1.05)
+    }
+}
+@keyframes upH {
+    0% {
+        width: 1px;
+        border-radius: 100%;
+    }
+    100% {
+        width: 35%;
+        border-radius: 0;
+    }
+}
+
+@keyframes upP {
+    0% {
+        color: #aaa;
+    }
+    100% {
+        color: #000;
+    }
+}
+@keyframes downB {
+    0% {
+        transform: scale(1.05)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+@keyframes downH {
+    0% {
+        width: 35%;
+        border-radius: 0;
+    }
+    100% {
+        width: 1px;
+        border-radius: 100%;
+    }
+}
+@keyframes downP {
+    0% {
+        color: #000;
+    }
+    100% {
+        color: #aaa;
+    }
+}
+
+@keyframes category-list-bg {
+    0% {
+        opacity: 0;
+        height: 1px;
+    }
+    100% {
+        opacity: 1;
+        height: 3em;
+    }
+}
+@keyframes category-list-bg-rev {
+    0% {
+        opacity: 1;
+        height: 3em;
+    }
+    100% {
+        opacity: 0;
+        height: 1px;
+    }
+}
+@keyframes category-list-hr {
+    0% {
+        width: 0
+    }
+    100% {
+        width: 70%
+    }
+}
+@keyframes category-list-hr-rev {
+    0% {
+        width: 70%
+    }
+    100% {
+        width: 0;
+    }
+}
+@keyframes category-list-text {
+    0% {
+        color: #eee;
+        font-size: 70%;
+    }
+    100% {
+        color: #000;
+        font-size: 70%;
+    }
+}
+@keyframes category-list-text-rev {
+    0% {
+        font-size: 70%;
+        opacity: 1;
+    }
+    50% {
+        font-size: 70%;
+        opacity: 0;
+    }
+    100% {
+        font-size: 0;
+        opacity: 0;
+    }
+}
