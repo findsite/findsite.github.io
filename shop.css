@@ -408,6 +408,23 @@ header {
         font-size: 4vh;
     }
 }
+@media only screen and (max-width: 502px) {
+    #header-shop-name {
+        position: absolute;
+
+        opacity: 0;
+
+        z-index: 0;
+    }
+    #categories {
+        padding-left: 15%;
+    
+        z-index: 1;
+    }
+    #categories-list p {
+        font-size: .8em;
+    }
+}
 
 
 
