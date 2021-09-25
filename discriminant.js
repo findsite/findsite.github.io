@@ -6,7 +6,7 @@ $(function() {
 
 	$('#start').click(function() { $('#formula').val() != '' ? start() : alert('Введите формулу') });
 	$('.parabola').click(function() {
-		window.location.href = "https://findsite.github.io/gr
+		window.location.href = "https://findsite.github.io/graphic";
 	});
 	
 
