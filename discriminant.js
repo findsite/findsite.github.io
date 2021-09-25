@@ -5,7 +5,10 @@ $(function() {
 	});
 
 	$('#start').click(function() { $('#formula').val() != '' ? start() : alert('Введите формулу') });
-
+	$('.parabola').click(function() {
+		window.location.href = "https://findsite.github.io/gr
+	});
+	
 
 	// Language
 
@@ -109,7 +112,9 @@ $(function() {
 		let oldCoefs = new Array;
 		oldCoefs = oldCoefs.concat(coefs)
 
-
+		window.localStorage.formulaA = coefs[0];
+		window.localStorage.formulaB = coefs[1];
+		window.localStorage.formulaC = coefs[2];
 
 		text += (f[0] == '-' ? '-' : '') + (Math.pow(coefs[0],2) == 1 ? '' : toPos(coefs[0])) + 'x²' + signOf(coefs[1]) + (Math.pow(coefs[1],2) == 1 ? '' : toPos(coefs[1])) + 'x' + signOf(coefs[2]) + toPos(coefs[2]) + ' = 0<br/>';
 
