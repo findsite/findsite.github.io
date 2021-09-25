@@ -85,7 +85,7 @@ function drawDot(x, y, dotRadius) {
 
 
 
-for(let i = -2.5; i < 4.5; i += 0.01) {
+for(let i = -5; i < 10; i += 0.01) {
 	let x = i;
 	let y = ((coefs[0] * (i * i)) + (i * coefs[1]) + coefs[2]);
 
