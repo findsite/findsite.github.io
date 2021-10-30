@@ -1,14 +1,86 @@
-<!DOCTYPE>
-<html>
-<head>
-<title>для настюши <3</title>
-</head>
-<body>
-<h1>Список шлюх Азербайджана:</h1>
-<ul>
-<li>Коробко Даниил</li>
-<li>Анастасия Витикач-Мирная</li>
-<li>Ошибка загрузки...аоьаьпкадпдк</li>
-</ul>
-</body>
-</html>
+$('.overflow-screen-start').innerHeight(window.innerHeight);
+$('.container').innerHeight(window.innerHeight);
+$('.container').innerWidth(window.innerWidth);
+
+
+function textMessage(msg, block, intervalMS) {
+	let letter = 0;
+	let msgInterval = setInterval(() => {
+		document.getElementsByClassName(block)[0].innerHTML = document.getElementsByClassName(block)[0].innerHTML + msg[letter];
+		letter++;
+
+		if(letter == msg.length) clearInterval(msgInterval);
+	}, intervalMS)
+}
+
+textMessage('Для Настюши😘', 'header-text', 100);
+
+
+
+
+setTimeout(() => {
+	$('.header-text').animate({opacity: 0}, 100)
+	$('.overflow-screen-start').delay(300).animate({opacity: 0}, 200);
+	setTimeout(() => { 
+		$('.overflow-screen-start').remove();
+		$('.container').css('opacity', '1');
+
+		textMessage('Список шлюх Азербайджана:', 'list-header', 50);
+
+		setTimeout(() => {
+			currentSluth = 0
+			let addPoints = setInterval(() => {
+				addSluth(sluths[currentSluth], sluthsAlert[currentSluth]);
+				currentSluth++;
+
+				if(currentSluth == sluths.length) {
+					clearInterval(addPoints);
+					$('.new-sluth').animate({opacity: 1}, 100)
+					document.getElementsByClassName('new-sluth')[0].onclick = () => {
+						addSluth('', '', true)
+					}
+				}
+			}, 200)
+		}, ('Список шлюх Азербайджана').length * 50)
+	}, 500);
+}, ('Для Настюши😘').length * 100 + 300);
+
+
+
+let sluths = [
+	'Коробко Даниил',
+	'Анастасия Витикач-Мирная Макаронина',
+	'Гноман Воскресенский',
+	'Вокан Печерский',
+	'Рейндерс дИмитрий',
+	'Шумихин Александр Аркадиевич вроде'
+];
+let sluthsAlert = [
+	'Лошпедус, по факту',
+	'Забивная шлюшка',
+	'Мой😘😘😘',
+	'люблю настеньку витикач хз нахуя я это пишу щас удалю хотя нет ладно пусть будет всё равно не увидишь надеюсь не увидишь ты же макаронина как ты можешь увидеть',
+	'дИмитрий блять',
+	'единственный экземпляр в списке клоунов ришельевского'
+]
+
+
+function addSluth(sluth, alertMSG, isNew = false) {
+	let nLi = document.createElement('li');
+	let nP = document.createElement(isNew ? 'input' : 'p')
+
+	if(isNew) nP.setAttribute('placeholder', 'Введите имя новой шлюшки');
+
+	nP.innerText = sluth;
+	if(alertMSG != '') {
+		nP.onclick = () => {
+			alert(alertMSG);
+		}
+	}
+
+	nLi.style += 'opacity: 0'
+
+	$('.sluth-list').append(nLi);
+	$(nLi).append(nP);
+	$(nLi).animate({marginTop: '2%', opacity: '1'}, 100);
+}
