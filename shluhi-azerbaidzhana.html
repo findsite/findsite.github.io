@@ -1,4 +1,131 @@
-$('.overflow-screen-start').innerHeight(window.innerHeight);
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Для настюши</title>
+
+		<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	</head>
+	<body>
+		<div class="overflow-screen-start">
+			<p class="header-text"></p>
+			
+			<svg width="250" height="240" xmlns="http://www.w3.org/2000/svg" id="svg">
+				<path stroke-linecap="round" stroke-width="4" stroke="Pink" stroke-weight="3px"/>
+			</svg>
+		</div>
+		<div class="container">
+			<h2 class="list-header"></h2>
+			<ul class="sluth-list"></ul>
+			<button class="new-sluth">+</button>
+		</div>
+	</body>
+	<!-- Мне лень создавать новые файлы поэтмоу закину сюда всё, ачё, похуй же -->
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+
+
+
+* {
+	padding: 0;
+	margin: 0;
+}
+::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+}
+
+
+html {
+	background-color: #17084b;
+
+	color: #fff;
+}
+
+.overflow-screen-start {
+	background-color: #0e052c;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.overflow-screen-start .header-text {
+	position: absolute;
+
+	font-family: Calibri;
+	font-size: 3em;
+	text-align: center;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+
+	font-size: 150%;
+	font-family: 'Raleway', sans-serif;
+
+	opacity: 0;
+}
+.list-header {
+	padding: 10% 0;
+
+	text-align: center;
+}
+.sluth-list {
+	display: flex;
+	flex-direction: column;
+
+	width: 90%;
+
+	margin-left: 2%;
+
+	list-style-type: none;
+}
+li {
+	background-color: #eee5;
+
+	width: 100%;
+
+	border-radius: 20px;
+
+	padding: 2% 0 2% 2%;
+
+	opacity: 0;
+}
+
+button {
+	width: 1.5em;
+	height: 1.5em;
+
+	font-size: 1.5em;
+
+	margin-top: 3%;
+
+	border: none;
+	border-radius: 100%;
+
+	opacity: 0;
+}
+input {
+	background-color: #aaa5;
+
+	width: 90%;
+	height: 100%;
+
+	color: #fff;
+
+	border: none;
+	border-radius: 30px;
+}
+input::placeholder {
+	color: #eee;
+}
+	</style>
+	<script>
+		$('.overflow-screen-start').innerHeight(window.innerHeight);
 $('.container').innerHeight(window.innerHeight);
 $('.container').innerWidth(window.innerWidth);
 
@@ -84,3 +211,5 @@ function addSluth(sluth, alertMSG, isNew = false) {
 	$(nLi).append(nP);
 	$(nLi).animate({marginTop: '2%', opacity: '1'}, 100);
 }
+	</script>	
+</html>
