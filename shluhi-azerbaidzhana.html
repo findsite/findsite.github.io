@@ -22,6 +22,95 @@
 		</div>
 	</body>
 	<!-- Мне лень создавать новые файлы поэтмоу закину сюда всё, ачё, похуй же -->
+	
+	<script>
+		$('.overflow-screen-start').innerHeight(window.innerHeight);
+$('.container').innerHeight(window.innerHeight);
+$('.container').innerWidth(window.innerWidth);
+
+
+function textMessage(msg, block, intervalMS) {
+	let letter = 0;
+	let msgInterval = setInterval(() => {
+		document.getElementsByClassName(block)[0].innerHTML = document.getElementsByClassName(block)[0].innerHTML + msg[letter];
+		letter++;
+
+		if(letter == msg.length) clearInterval(msgInterval);
+	}, intervalMS)
+}
+
+textMessage('Для Настюши😘', 'header-text', 100);
+
+
+
+
+setTimeout(() => {
+	$('.header-text').animate({opacity: 0}, 100)
+	$('.overflow-screen-start').delay(300).animate({opacity: 0}, 200);
+	setTimeout(() => { 
+		$('.overflow-screen-start').remove();
+		$('.container').css('opacity', '1');
+
+		textMessage('Список шлюх Азербайджана:', 'list-header', 50);
+
+		setTimeout(() => {
+			currentSluth = 0
+			let addPoints = setInterval(() => {
+				addSluth(sluths[currentSluth], sluthsAlert[currentSluth]);
+				currentSluth++;
+
+				if(currentSluth == sluths.length) {
+					clearInterval(addPoints);
+					$('.new-sluth').animate({opacity: 1}, 100)
+					document.getElementsByClassName('new-sluth')[0].onclick = () => {
+						addSluth('', '', true)
+					}
+				}
+			}, 200)
+		}, ('Список шлюх Азербайджана').length * 50)
+	}, 500);
+}, ('Для Настюши😘').length * 100 + 300);
+		
+
+
+let sluths = [
+	'Коробко Даниил',
+	'Анастасия Витикач-Мирная Макаронина',
+	'Гноман Воскресенский',
+	'Вокан Печерский',
+	'Рейндерс дИмитрий',
+	'Шумихин Александр Аркадиевич вроде'
+];
+let sluthsAlert = [
+	'Лошпедус, !люблю!',
+	'Забивную !шлюшку!',
+	'Мой😘😘😘 герман !с фамилией! воскресенский',
+	'дИмитрий !витикач!',
+	'дИмитрий блять',
+	'единственный экземпляр в списке клоунов !с ришельевского!'
+]
+
+
+function addSluth(sluth, alertMSG, isNew = false) {
+	let nLi = document.createElement('li');
+	let nP = document.createElement(isNew ? 'input' : 'p')
+
+	if(isNew) nP.setAttribute('placeholder', 'Введите имя новой шлюшки');
+
+	nP.innerText = sluth;
+	/*if(alertMSG != '') {
+		nP.onclick = () => {
+			alert(alertMSG);
+		}
+	}*/
+
+	nLi.style += 'opacity: 0'
+
+	$('.sluth-list').append(nLi);
+	$(nLi).append(nP);
+	$(nLi).animate({marginTop: '2%', opacity: '1'}, 100);
+}
+	</script>
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
@@ -124,92 +213,4 @@ input::placeholder {
 	color: #eee;
 }
 	</style>
-	<script>
-		$('.overflow-screen-start').innerHeight(window.innerHeight);
-$('.container').innerHeight(window.innerHeight);
-$('.container').innerWidth(window.innerWidth);
-
-
-function textMessage(msg, block, intervalMS) {
-	let letter = 0;
-	let msgInterval = setInterval(() => {
-		document.getElementsByClassName(block)[0].innerHTML = document.getElementsByClassName(block)[0].innerHTML + msg[letter];
-		letter++;
-
-		if(letter == msg.length) clearInterval(msgInterval);
-	}, intervalMS)
-}
-
-textMessage('Для Настюши😘', 'header-text', 100);
-
-
-
-
-setTimeout(() => {
-	$('.header-text').animate({opacity: 0}, 100)
-	$('.overflow-screen-start').delay(300).animate({opacity: 0}, 200);
-	setTimeout(() => { 
-		$('.overflow-screen-start').remove();
-		$('.container').css('opacity', '1');
-
-		textMessage('Список шлюх Азербайджана:', 'list-header', 50);
-
-		setTimeout(() => {
-			currentSluth = 0
-			let addPoints = setInterval(() => {
-				addSluth(sluths[currentSluth], sluthsAlert[currentSluth]);
-				currentSluth++;
-
-				if(currentSluth == sluths.length) {
-					clearInterval(addPoints);
-					$('.new-sluth').animate({opacity: 1}, 100)
-					document.getElementsByClassName('new-sluth')[0].onclick = () => {
-						addSluth('', '', true)
-					}
-				}
-			}, 200)
-		}, ('Список шлюх Азербайджана').length * 50)
-	}, 500);
-}, ('Для Настюши😘').length * 100 + 300);
-		
-
-
-let sluths = [
-	'Коробко Даниил',
-	'Анастасия Витикач-Мирная Макаронина',
-	'Гноман Воскресенский',
-	'Вокан Печерский',
-	'Рейндерс дИмитрий',
-	'Шумихин Александр Аркадиевич вроде'
-];
-let sluthsAlert = [
-	'Лошпедус, !люблю!',
-	'Забивную !шлюшку!',
-	'Мой😘😘😘 герман !с фамилией! воскресенский',
-	'дИмитрий !витикач!',
-	'дИмитрий блять',
-	'единственный экземпляр в списке клоунов !с ришельевского!'
-]
-
-
-function addSluth(sluth, alertMSG, isNew = false) {
-	let nLi = document.createElement('li');
-	let nP = document.createElement(isNew ? 'input' : 'p')
-
-	if(isNew) nP.setAttribute('placeholder', 'Введите имя новой шлюшки');
-
-	nP.innerText = sluth;
-	/*if(alertMSG != '') {
-		nP.onclick = () => {
-			alert(alertMSG);
-		}
-	}*/
-
-	nLi.style += 'opacity: 0'
-
-	$('.sluth-list').append(nLi);
-	$(nLi).append(nP);
-	$(nLi).animate({marginTop: '2%', opacity: '1'}, 100);
-}
-	</script>	
 </html>
