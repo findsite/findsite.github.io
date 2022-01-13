@@ -63,7 +63,6 @@ function decompile(v, x) {
 
 	newValue = newValue.split(' ');
 	if(newValue[0] == '') newValue[0] = '0';
-	console.log(newValue);
 	return newValue;
 
 }
@@ -129,7 +128,6 @@ function decide(v, x) {
 	let val = decompile(v, x);
 
 	while(val.indexOf('(') != -1) {
-		console.log(val);
 		let valueInside = new Array();
 
 		let i = val.indexOf('(');
@@ -138,7 +136,6 @@ function decide(v, x) {
 			valueInside += val[i];
 			val.splice(i, 1);
 		}
-		console.log('a');
 		val[i] = decide(valueInside);
 	}
 
