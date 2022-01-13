@@ -92,7 +92,6 @@ function build(v) {
 		for(let i = -20.0; i < 20.0; i) {
 			x = Math.round(i * 100) / 100;
 			y = decide(v, x);
-			console.log('me', x, y);
 			drawDot(x, y, (i == 0.0 || (Math.round(x * 1000) / 1000) == 0.0 ? 3 : 1.5));
 
 			i += 0.01;
