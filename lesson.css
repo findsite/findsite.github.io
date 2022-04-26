@@ -1,0 +1,146 @@
+/* Colors
+
+#7b83eb
+#5059c9
+#1a1a1a
+
+*/
+@font-face {
+	font-family: Montserrat;
+	src: url(Montserrat.ttf);
+}
+@font-face {
+	font-familY: Roboto;
+	src: url(RobotoMono.ttf);
+}
+
+
+
+
+* {
+	padding: 0;
+	margin: 0;
+}
+::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+}
+
+.header {
+	position: fixed;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	background-color: rgba(240, 240, 240, .9);
+
+	width: 85%;
+	height: 12.5vh;
+
+	font-size: 1.75rem;
+	font-family: Montserrat, sand-serif;
+	font-weight: bold;
+
+	padding: 0 7.5%;
+
+	border-bottom: solid 2px #5059c9;
+}
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding-top: 12.5vh;
+
+	height: calc(100vh - 12.5vh);
+}
+.main_info {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	justify-items: center;
+	align-items: center;
+
+	background: linear-gradient(to right, #7b83eb, #25b100, #b8ad00, #b13e00);
+	background-size: 1200vw 100%;
+	background-position: 0;
+
+	width: 35vw;
+	height: 35vw;
+
+	text-align: center;
+	text-decoration: none;
+
+	border-radius: 50%;
+	border: solid #5059c9;
+}
+.main_info .lesson {
+	color: #fff;
+	font-size: 2rem;
+	font-family: Roboto, sans-serif;
+
+	width: 70%;
+}
+.main_info .lesson_duration {
+	opacity: 0;
+
+	width: 70%;
+}
+.main_info .lesson_duration .start, .main_info .lesson_duration .end {
+	color: #ccc;
+	font-size: 1.2rem;
+	font-family: Roboto, sans-serif;
+
+	padding: 0 1%;
+}
+.main_info .lesson_duration .current_time {
+	color: #eee;
+	font-size: 1.3rem;
+	font-family: Roboto, sans-serif;
+}
+.main_info .lesson_duration .current_time:before {
+	content: ' - ';
+}
+.main_info .lesson_duration .current_time:after {
+	content: ' - ';
+}
+
+
+@media only screen and (max-width: 1500px) {
+	.main_info {
+		width: 60vw;
+		height: 60vw;
+	}
+}
+@media only screen and (max-width: 700px) {
+	.main_info {
+		width: 90vw;
+		height: 90vw;
+	}
+}
+
+
+@keyframes move_bg {
+	0% {
+		background-position: 0;
+	}
+	100% {
+		background-position: 100%;
+	}
+}
+@keyframes light_border_color {
+	0% {
+		border-color: #5059c9;
+	}
+	100% {
+		border-color: #aaa;
+	}
+}
+@keyframes dark_border_color {
+	0% {
+		border-color: #aaa;
+	}
+	100% {
+		border-color: #5059c9;
+	}
+}
