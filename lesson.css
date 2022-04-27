@@ -106,7 +106,16 @@
 }
 
 
-@media only screen and (max-width: 1500px) {
+
+@media only screen and (max-width: 500px) {
+	.main_info .lesson {
+		font-size: 1.5rem;
+	}
+	.main_info .lesson_duration {
+		width: 90%;
+	}
+}
+@media only screen and (max-width: 1100px) {
 	.main_info {
 		width: 60vw;
 		height: 60vw;
@@ -118,6 +127,7 @@
 		height: 90vw;
 	}
 }
+
 
 
 @keyframes move_bg {
