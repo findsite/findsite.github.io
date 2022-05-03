@@ -10,6 +10,7 @@ let days = [
 ]
 
 $('.day_of_week').text(days[date.getDay()])
+$('.day').eq(date.getDay() - 1).attr('class', 'day today')
 
 
 
@@ -142,6 +143,9 @@ let timetable_links = [
 function convert_to_time(num) {
 	return num.toString().length == 2 ? num : ('0' + num);
 }
+function clear_timetable_days() {
+	$('.today .lesson').attr('class', 'lesson')
+}
 function is_lesson_now(h, m, s) {
 	sum_time = ((h * 60 * 60) + m * 60) + s
 	for(let i = 0; i < timetable_time.length; i++) {
@@ -160,6 +164,8 @@ function is_lesson_now(h, m, s) {
 
 				}, 500)
 				$('.main_info .lesson').delay(50).animate({marginBottom: '0', opacity: '1'})
+
+				$('.today .lesson').eq(i).attr('class', 'lesson current_lesson')
 			}
 			if($('.main_info .lesson_duration').css('opacity') == '0') {
 				$('.main_info .lesson_duration').animate({marginBottom: '5%', opacity: '1'})
@@ -188,6 +194,7 @@ function is_lesson_now(h, m, s) {
 				$('.main_info').css('animation', 'move_bg_back 1s forwards');
 			}
 			$('main_info .lesson_duration').animate({marginBottom: '0', opacity: '1'})
+			clear_timetable_days();
 		}
 	}
 }
