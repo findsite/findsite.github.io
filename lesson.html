@@ -10,13 +10,26 @@
 	</head>
 	<body>
 		<style class="bg_animations"></style>
+		<script>
+			function showNotification(mTitle, mText) {
+			const notif = new Notification(mTitle, {
+					body: mText
+				});
+			}
+
+			if(Notification.permission === 'default') {
+				Notification.requestPermission();
+			}
+			showNotification('Хуй', 'пидор')
+			$('html').attr('click', function(){showNotification('1', 'hui')}
+		</script>
 		<header class="header">
 			<p class="logo">10-IKT</p>
 			<p class="day_of_week">@MrKidics</p>
 		</header>
 		<div class="container">
 			<a class="main_info">
-				<p class="lesson">Chill</p>
+				<p class="lesson">Тест(1)</p>
 				<div class="lesson_duration">
 					<span class="start"></span>
 					<span class="current_time"></span>
