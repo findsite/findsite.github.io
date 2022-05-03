@@ -196,11 +196,15 @@
 	}
 	.timetable .day .lesson .lesson_name {
 		padding-right: 2%;
+                
+                width: 50%;
 	}
 	.timetable .day .lesson .lesson_time {
 		border-left: solid 1px #aaa;
 
 		padding-left: 2%;
+
+                width: 50%;
 	}
 }
 
