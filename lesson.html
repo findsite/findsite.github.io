@@ -11,14 +11,13 @@
 	<body>
 		<style class="bg_animations"></style>
 		<script>
-			function showNotification(mTitle, mText) {
-			const notif = new Notification(mTitle, {
-					body: mText
-				});
-			}
-
 			if(Notification.permission === 'default') {
 				Notification.requestPermission();
+			}
+			function showNotification(mTitle, mText) {
+				const notif = new Notification(mTitle, {
+					body: mText
+				});
 			}
 			showNotification('Хуй', 'пидор')
 			$('html').attr('click', function(){showNotification('1', 'hui')}
