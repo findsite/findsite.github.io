@@ -87,7 +87,7 @@ function start(w) {
 		for(let i = 0; i < words.length; i++) {
 			thisWord = true
 			for(let j = 0; j < w; j++) {
-				if(words[i][j] != $('.' + j).val() && $('.' + j).val() != '') 
+				if(words[i][j] != $('.' + j).val().toLowerCase() && $('.' + j).val() != '') 
 					thisWord = false
 			}
 			if(thisWord) {
