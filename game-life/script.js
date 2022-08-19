@@ -46,51 +46,58 @@ function update_matrix(i, j) {
 	if(matrx[i][j] == 1) write_new_info(('Новая жизнь (' + i + '; ' + j + ')'))
 	else write_new_info(('Клетка умерла (' + i + '; ' + j + ')'))
 }
+function update_periodicity() {
+	game.periodicity
+}
 
 draw_field(matrx, true)
 
 
-
-setInterval(() => {
-	if(game.enabled) {
-		neighbor_matrx = []
-		for(let i = 0; i < count_of_rows; i++) {
-			neighbor_matrx[i] = []
-			for(let j = 0; j < count_of_columns;  j++) {
-				neighbor_matrx[i][j] = get_count_of_neighbors(matrx, i, j)
-			}
-		}
-		for(let i = 0; i < count_of_rows; i++) {
-			for(let j = 0; j < count_of_columns; j++) {
-				let count_of_neighbors = neighbor_matrx[i][j]
-				if(matrx[i][j] == 0) {
-					new_life = false;
-					for(let i = 0; i < game.new_life.length; i++) {
-						if(count_of_neighbors == game.new_life[i]) {
-							new_life = true;
-						}
-					}
-					if(new_life) {
-						update_matrix(i, j)
-					}
-				}
-				else {
-					continue_life = false;
-					for(let i = 0; i < game.continue_life.length; i++) {
-						if(count_of_neighbors == game.continue_life[i]) {
-							continue_life = true;
-							break;
-						}
-					}
-					if(!continue_life) {
-						update_matrix(i, j)
-					}
+function start() {
+	let game_interval = setInterval(() => {
+		if(game.enabled) {
+			neighbor_matrx = []
+			for(let i = 0; i < count_of_rows; i++) {
+				neighbor_matrx[i] = []
+				for(let j = 0; j < count_of_columns;  j++) {
+					neighbor_matrx[i][j] = get_count_of_neighbors(matrx, i, j)
 				}
 			}
+			for(let i = 0; i < count_of_rows; i++) {
+				for(let j = 0; j < count_of_columns; j++) {
+					let count_of_neighbors = neighbor_matrx[i][j]
+					if(matrx[i][j] == 0) {
+						new_life = false;
+						for(let i = 0; i < game.new_life.length; i++) {
+							if(count_of_neighbors == game.new_life[i]) {
+								new_life = true;
+							}
+						}
+						if(new_life) {
+							update_matrix(i, j)
+						}
+					}
+					else {
+						continue_life = false;
+						for(let i = 0; i < game.continue_life.length; i++) {
+							if(count_of_neighbors == game.continue_life[i]) {
+								continue_life = true;
+								break;
+							}
+						}
+						if(!continue_life) {
+							update_matrix(i, j)
+						}
+					}
+				}
+			}
+			game.generation += 1;
 		}
-		game.generation += 1;
-	}
-}, 100)
+		else {
+			clearInterval(game_interval)
+		}
+	}, document.getElementsByClassName('info__game-speed')[0].value)
+}
 
 function get_count_of_neighbors(matrix, i, j) {
 	let num = 0;
@@ -138,6 +145,7 @@ document.getElementsByClassName('switcher')[0].onclick = function() {
 		document.getElementsByClassName('switcher__pause')[0].className = 'switcher__pause enabled';
 		switcher_pos = 0;
 		game.enabled = true;
+		start()
 	}
 	else {
 		document.getElementsByClassName('switcher__start')[0].className = 'switcher__start enabled';
