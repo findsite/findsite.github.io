@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Шлюшандра</title>
+    <link rel="stylesheet" href="shluha.css">
+</head>
+<body>
+    <main class="main" id="main">
+        <div class="container">
+            <div class="main-block">
+                <div class="container">
+                    <h1 class="main-block__about">Настя:</h1>
+                    <button class="main-block__get-info" @click="addFact">Нажмите, чтобы узнать о Насте Шарки</button>
+                    <hr>
+                    <div class="sharky-block"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        let currentFact = 0;
+        let about_sharky = [
+            'Шлюха',
+            'Свиное рыло',
+            'Пробитое ебало',
+            'Дворняжка',
+            'Голодающая А Я ЧИЗКЕЙК ЩЯС ЖРУ АХВХАЫВХАЫХВА',
+            'Мечта марата',
+            'Сама мечтает о марате',
+            'Хочет колдовать под его подбородком',
+            'лан пошли фильм',
+            'дурочка <3',
+        ]
+        let app = Vue.createApp({
+            methods: {
+                addFact() {
+                    if(currentFact < about_sharky.length) {
+                        let newFact = document.createElement('p')
+                        newFact.innerText = about_sharky[currentFact];
+                        document.getElementsByClassName('sharky-block')[0].appendChild(newFact);
+                        currentFact++;
+                    }
+                }
+            }
+        })
+        app.mount('#main')
+    </script>
+</body>
+</html>
