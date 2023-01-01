@@ -119,7 +119,9 @@ hr {
     height: 200px;
 }
 .new-year {
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: white;
+    text-align: center;
     transform: translate(0, 25%);
+    padding: 0 10%;
 }
