@@ -21,9 +21,9 @@ let elapsedSeconds = currentDate.diff(startDate, 'seconds') % 60;
 
 function russian_multiples(value, cond1, cond2, cond3) {
     let output;
-    if(value.toString()[value.toString().length - 1] === '1' && elapsedYears !== 11) {
+    if(value.toString()[value.toString().length - 1] === '1' && value !== 11) {
         output = cond1;
-    } else if((value.toString()[value.toString().length - 1] === '2' && elapsedYears !== 12) || (value.toString()[value.toString().length - 1] === '3' && elapsedYears !== 13) || (value.toString()[value.toString().length - 1] === '4' && elapsedYears !== 14)) {
+    } else if((value.toString()[value.toString().length - 1] === '2' && value !== 12) || (value.toString()[value.toString().length - 1] === '3' && value !== 13) || (value.toString()[value.toString().length - 1] === '4' && value !== 14)) {
         output = cond2;
     } else {
         output = cond3;
