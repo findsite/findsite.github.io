@@ -1,3 +1,8 @@
+// v.1.0
+
+
+
+
 window.addEventListener('scroll', (e) => {
     document.getElementsByClassName('main')[0].style = 'margin-top: -' + (window.pageYOffset / 2 + 100) + 'px';
 })
