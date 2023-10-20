@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Для родной</title>
+</head>
+<body>
+	<div class="timer-opener-background inactive" id="timer-opener">
+		<div class="timer-opener">
+			<svg fill="#000000" height="50px" width="50px" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 296.228 296.228">
+  <g>
+    <path d="m167.364,48.003v-23.003h10.5c6.903,0 12.5-5.597 12.5-12.5s-5.596-12.5-12.5-12.5h-59.5c-6.903,0-12.5,5.597-12.5,12.5s5.597,12.5 12.5,12.5h10.5v23.003c-59.738,9.285-105.604,61.071-105.604,123.37-3.55271e-15,68.845 56.01,124.854 124.854,124.854s124.854-56.01 124.854-124.854c0-62.299-45.866-114.085-105.604-123.37zm-19.25,223.225c-55.06,0-99.854-44.795-99.854-99.854s44.795-99.854 99.854-99.854 99.854,44.795 99.854,99.854-44.794,99.854-99.854,99.854z"/>
+    <path d="m160.614,166.18v-58.889c0-6.903-5.597-12.5-12.5-12.5s-12.5,5.597-12.5,12.5v66.1c0,2.033 0.81,3.982 2.25,5.416l34.969,34.822c4.893,4.872 12.806,4.854 17.678-0.037 4.871-4.892 4.854-12.807-0.037-17.678l-29.86-29.734z"/>
+  </g>
+</svg>
+</svg>
+		</div>
+	</div>
+	<div class="timer-background active">
+		<div class="timer">
+			<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" class="exiter" id="exiter">
+  				 <circle cx="10" cy="10" r="8" fill="transparent" stroke="black" stroke-width="2" />
+  				<line x1="4" y1="4" x2="16" y2="16" stroke="black" stroke-width="2" />
+  				<line x1="4" y1="16" x2="16" y2="4" stroke="black" stroke-width="2" />
+			</svg>
+			<div class="timer__counter">На всю жизнь</div>
+			<div class="love-connector">
+				<div class="love-connector__img">
+					<img src="https://cdn.discordapp.com/attachments/885088984391352320/1164311536098103378/image.png?ex=6542c09e&is=65304b9e&hm=3b583de1d835ffa0ce6628f6c1228b514cb6593c747e8f6bf32da60ed86f8a89&" alt="MARINA">
+				</div>
+				<p class="love-connector__connector">💗</p>
+				<div class="love-connector__img">
+					<img src="https://cdn.discordapp.com/attachments/885088984391352320/1164311671465066526/image.png?ex=6542c0be&is=65304bbe&hm=303e5f8404556817208579aa59f8d02139f6f677a5d9d70bbf4e3d12d2ba8c01&" alt="VOVA">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="slide">
+		<img src="C:/Users/Comp/Desktop/Сайты/mylove/images/1slide.png" alt="MYLOVE1">
+		<p class="slide__caption">Мариша, мусульманочка моя</p>
+	</div>
+	<div class="slide">
+		<img src="https://cdn.discordapp.com/attachments/885088984391352320/1164996278745309204/Screenshot_2023-10-20-21-38-53-943_com.miui.videoplayer.jpg?ex=65453e55&is=6532c955&hm=15fa1484098e77d142db59265e52817a714a5f3ea46df76ad31316409ff50795&" alt="SERDTSEMARINE">
+		<p class="slide__caption">Я хочу сказать, что очень сильно люблю тебя, ты моя лапочка родная</p>
+	</div>
+	<div class="slide">
+		<div class="slide__collage">
+			<img src="https://cdn.discordapp.com/attachments/885088984391352320/1164297230354747563/o0PykBzEEgAhqYGgtCAoIPjfLCg60dzgPnrIkU.png?ex=6542b34b&is=65303e4b&hm=7d3cd77bb435071020b4a8e14e42f387dc26659640d7feb89d54358f3138f760&" alt="">
+			<img src="https://cdn.discordapp.com/attachments/885088984391352320/1164297666537209896/a91ce7b2bd154a7ea7e837077e1ae5db_1694862465.png?ex=6542b3b3&is=65303eb3&hm=4acf83d1939241e84a57d7fa1bf94281028b2d5fd74ea7a25723a0872be30c2c&" alt="">
+			<br/>
+			<img src="https://cdn.discordapp.com/attachments/885088984391352320/1164297773672300604/108fa88c84a04e729f61957fb2c1125c_1696439422.png?ex=6542b3cc&is=65303ecc&hm=01bab340af5c4395f9f02bb10c09595a158e8176909e899d8cf0a4b86f7b7b12&" alt="">
+			<img src="https://cdn.discordapp.com/attachments/885088984391352320/1164295728525480006/image.png?ex=6542b1e5&is=65303ce5&hm=866d97eb9905c0de9cc2380d2002d8dc33505ae1d567e0a0927067712fbfa083&" alt="">
+		</div>
+		<p class="slide__caption">Ты самая красивая <s>женщина</s> девушка, которую я когда-либо встречал, ты идеал, я любуюсь каждой твоей фотографией, когда не могу любоваться вживую</p>
+	</div>
+	<div class="slide">
+		<img src="https://cdn.discordapp.com/attachments/885088984391352320/1164999376972812309/image.png?ex=65454138&is=6532cc38&hm=8c69c7902beb5acad8c55333ab32f4f1cbb9e28ec0f01d7060aba5e117386e0c&" alt="">
+		<p class="slide__caption">Если тебе когда-либо будет грустно - обязательно пиши мне, я всегда тебя поддержу. Если же по какой-то причине я не в сети и не могу ответить, надеюсь этот сайт тебе поможет, ведь все что тут написано - навечно</p>
+	</div>
+	<div class="slide">
+		<img src="https://cdn.discordapp.com/attachments/885088984391352320/1164997212951023758/IMG_20231020_214251.jpg?ex=65453f34&is=6532ca34&hm=21415c33f561d82304bda675ea9dd82715d6562c6eb3488bb2bd60acb7077cf9&" alt="">
+	</div>
+	<script src="moment.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
