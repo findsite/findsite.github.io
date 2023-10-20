@@ -1,0 +1,122 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.active {
+	display: block;
+	opacity: 1;
+	z-index: 100;
+	transition: all .3s;
+}
+.inactive {
+	display: none;
+	opacity: 0;
+	z-index: -1;
+	transition: all .3s;
+}
+
+.timer-opener {
+	position: absolute;
+	width: 0px;
+	height: 0px;
+}
+.timer-opener-background {
+	position: fixed;
+	top: 90%;
+	left: 80%;
+	background-color: rgba(255, 255, 255, .9);
+	box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+	width: 50px;
+	height: 50px;
+	border-radius: 100px;
+	padding: 5px;
+}
+
+.timer-background {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, .5);
+	width: 100%;
+	height: 100vh;
+}
+.timer {
+	background: rgb(255,245,253);
+	background: linear-gradient(150deg, rgba(255,245,253,1) 8%, rgba(255,245,253,1) 16%, rgba(255,255,255,1) 16%, rgba(255,255,255,1) 58%, rgba(255,245,253,1) 58%, rgba(255,245,253,1) 84%, rgba(255,233,243,1) 84%);
+	width: 80%;
+	height: auto;
+	border-radius: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.timer__counter {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 50px;
+	font-family: Calibri;
+}
+.timer__counter::after {
+	content: '';
+	width: 30%;
+	height: 2px;
+	background-color: black;
+}
+
+.love-connector {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.love-connector__connector {
+	margin: 20px;
+}
+
+.exiter {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 20px;
+	height: 20px;
+	font-family: Calibri;
+	font-weight: bold;
+	left: 80%;
+}
+
+.love-connector__img img {
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+}
+
+.slide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.slide img {
+	width: 100%;
+}
+.slide__caption {
+	position: absolute;
+	font-family: Calibri;
+	font-size: 1.5em;
+	width: 70%;
+	padding: 5%;
+	text-align: center;
+	border-radius: 25px;
+	background-color: rgba(200, 200, 200, 0.5);
+	backdrop-filter: blur(3px);
+}
+.slide__collage {
+	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: space-between;
+}
+.slide__collage img {
+	width: 50%;
+
+}
