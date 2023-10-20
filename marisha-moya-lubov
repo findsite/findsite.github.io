@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="marisha.css">
 	<title>Для родной</title>
 </head>
 <body>
@@ -63,6 +63,6 @@
 		<img src="https://cdn.discordapp.com/attachments/885088984391352320/1164997212951023758/IMG_20231020_214251.jpg?ex=65453f34&is=6532ca34&hm=21415c33f561d82304bda675ea9dd82715d6562c6eb3488bb2bd60acb7077cf9&" alt="">
 	</div>
 	<script src="moment.js"></script>
-	<script src="script.js"></script>
+	<script src="marisha.js"></script>
 </body>
 </html>
