@@ -43,4 +43,4 @@ setInterval(() => {
 		enableSmoke();
 		document.getElementsByClassName('controller__timer')[0].textContent = 'Можно курить';
 	}
-}, 1);
+}, 1000);
