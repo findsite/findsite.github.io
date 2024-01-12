@@ -37,7 +37,7 @@ setInterval(() => {
 	if(getCurrentSeconds() <= lastsmoke && lastsmoke != '0') {
 		disableSmoke();
 		let timeLeft = Math.round((lastsmoke - getCurrentSeconds()) / 60);
-		document.getElementsByClassName('controller__timer')[0].textContent = timeLeft + ' мин.';
+		document.getElementsByClassName('controller__timer')[0].textContent = (timeLeft + ' мин. ' + lastsmoke - (timeLeft * 60) + ' сек.');
 	}
 	else {
 		enableSmoke();
