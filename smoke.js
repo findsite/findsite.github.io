@@ -27,7 +27,7 @@ const smoked = document.getElementsByClassName('controller__smoked')[0];
 smoked.addEventListener('click', () => {
 	if(button_allow) {
 		disableSmoke();
-		localStorage.setItem('lastsmoke', (getCurrentSeconds() + 1800));
+		localStorage.setItem('lastsmoke', (getCurrentSeconds() + 2400));
 	}
 });
 
