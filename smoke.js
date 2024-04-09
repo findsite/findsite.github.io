@@ -32,12 +32,13 @@ smoked.addEventListener('click', () => {
 });
 
 setInterval(() => {
-	let lastsmoke = localStorage.getItem('lastsmoke');
+	let lastsmoke = parseInt(localStorage.getItem('lastsmoke'));
 	console.log(getCurrentSeconds(), lastsmoke)
 	if(getCurrentSeconds() <= lastsmoke && lastsmoke != '0') {
 		disableSmoke();
-		let timeLeft = Math.round((lastsmoke - getCurrentSeconds()) / 60);
-		document.getElementsByClassName('controller__timer')[0].textContent = (timeLeft + ' мин. ' + lastsmoke - (timeLeft * 60) + ' сек.');
+		let timeLeft = Math.round((lastsmoke - getCurrentSeconds()));
+		console.log(timeLeft, timeLeft / 60);
+		document.getElementsByClassName('controller__timer')[0].textContent = ((Math.floor(timeLeft / 60) + ' мин. ') + ((lastsmoke - getCurrentSeconds()) - (Math.floor(timeLeft / 60) * 60)) + ' сек.');
 	}
 	else {
 		enableSmoke();
