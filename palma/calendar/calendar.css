@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap');
+
+
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.header {
+	width: 100%;
+	padding: 7% 0 7% 0;
+	background: rgba(250, 250, 250, 200);
+	font-family: 'Mulish', sans-serif;
+	font-size: 2em;
+	color: #444;
+	backdrop-filter: blur(1px);
+}
+.header .container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.main {
+	padding-top: 75px;
+}
+.calendar,
+.task-list,
+.task {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.calendar {
+	padding-bottom: 50px;
+	margin-bottom: 50px;
+	border-bottom: solid 1px #eee;
+}
+.calendar__left-border {
+	width: 12px;
+	background: linear-gradient(to bottom, #3498db, #9b59b6);
+	border-radius: 2px;
+}
+.task-list {
+	flex-direction: column;
+	width: 90%;
+	margin: 10px 0 10px 0;
+}
+.task {
+	width: 100%;
+	align-items: center;
+	margin: 5px 0 5px 0;
+	color: #444;
+}
+.task__time,
+.task__task {
+	border-radius: 20px;
+	background-color: #f0f0f0;
+	font-family: Calibri;
+}
+.task__time {
+	height: 70px;
+	width: 70px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+.task__time p {
+	font-size: 1.5em;
+	width: 100%;
+}
+.task__task {
+	width: 70%;
+	min-height: 70px;
+}
+.task__task p {
+	padding: 10px;
+}
+.inactive {
+	color: #999;
+}
+
+
+.days {
+	margin-bottom: 30px;
+}
+.days__first-row,
+.days__second-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.days__second-row {
+	margin: 0 37.5px 0 37.5px;
+}
+.day {
+  background-color: #444;
+  border-radius: 6px;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5em;
+  font-family: Calibri;
+  margin-top: 15px;
+}
+a {
+	text-decoration: none;
+}
+
+.active {
+	background: linear-gradient(75deg, #3498db, #9b59b6);
+}
+
+
+
+.editing-day {
+	font-family: 'Mulish', sans-serif;
+	font-size: 3em;
+	color: #444;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+.editing-day::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: 2px;
+  background-color: #d9d9d9;
+}
+input {
+	border: none;
+	background-color: #f0f0f0;
+	font-size: 1em;
+}
+input.task__task {
+	padding-left: 10px;
+}
+.controller {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-family: 'Mulish', sans-serif;
+	font-size: 3em;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	width: 90%;
+}
+.controller__save-button {
+	width: 150px;
+	height: 40px;
+	border-radius: 25px;
+	border: none;
+	background-color: #3498db;
+	font-size: .5em;
+	color: white;
+}
+.controller__add-button {
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	background-color: #9B59B6;
+	border: none;
+	font-size: 1.3em;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

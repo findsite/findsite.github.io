@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Календарь</title>
+	<link rel="stylesheet" href="calendar.css">
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="header__logo">
+				LOGO
+			</div>
+			<p class="header__name">Palma</p>
+		</div>
+	</div>
+	<div class="main">
+		<div class="container">
+			<p class="editing-day"></p>
+			<div class="task-list"></div>
+			<div class="controller">
+				<button class="controller__save-button">Save</button>
+				<button class="controller__add-button"><p>+</p></button>
+			</div>
+		</div>
+	</div>
+	<script src="calendar.js"></script>
+	<script>
+		editTasks();
+	</script>
+</body>
+</html>

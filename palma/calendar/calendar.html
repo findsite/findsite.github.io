@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="calendar.css">
+	<title>Календарь</title>
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="header__logo">
+				LOGO
+			</div>
+			<p class="header__name">Palma</p>
+		</div>
+	</div>
+	<div class="main">
+		<div class="container">
+			<div class="calendar">
+				<div class="calendar__left-border"></div>
+				<div class="task-list"></div>
+			</div>
+			<div class="days">
+				<div class="days__first-row">
+					<a href="calendar-task-creator.html"><div class="day">Mon</div></a>
+					<a href="calendar-task-creator.html"><div class="day">Tue</div></a>
+					<a href="calendar-task-creator.html"><div class="day">Wed</div></a>
+					<a href="calendar-task-creator.html"><div class="day">Thu</div></a>
+				</div>
+				<div class="days__second-row">
+					<a href="calendar-task-creator.html"><div class="day">Fri</div></a>
+					<a href="calendar-task-creator.html"><div class="day">Sat</div></a>
+					<a href="calendar-task-creator.html"></a><div class="day">Sun</div></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="calendar.js"></script>
+	<script>	
+		buildTasks();
+	</script>
+</body>
+</html>
